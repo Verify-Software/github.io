@@ -1,0 +1,3160 @@
+@charset "UTF-8";
+/*!
+Animate.css - http://daneden.me/animate
+MIT lisansı altında lisanslanmıştır - http://opensource.org/licenses/MIT
+
+Telif hakkı (c) 2014 Daniel Eden
+*/
+
+.animasyon {
+  -webkit-animasyon-süresi: 1,2 saniye;
+          animasyon süresi: 1,2 saniye;
+  -webkit-animasyon-doldurma modu: her ikisi de;
+          animasyon doldurma modu: her ikisi de;
+}
+
+.animasyonlu.sonsuz {
+  -webkit-animasyon-yineleme-sayısı: sonsuz;
+          animasyon yineleme sayısı: sonsuz;
+}
+
+.animasyonlu.menteşe {
+  -webkit-animasyon-süresi: 2 sn;
+          animasyon süresi: 2 sn;
+}
+
+@-webkit-anahtar kareler geri dönüyor {
+  %0, %20, %53, %80, %100 {
+    -webkit-geçiş-zamanlama-fonksiyonu: kübik-bezier(0.215, 0.610, 0.355, 1.000);
+            geçiş-zamanlama-fonksiyonu: kübik-bezier(0.215, 0.610, 0.355, 1.000);
+    -webkit-dönüşüm: translate3d(0,0,0);
+            dönüştürme: translate3d(0,0,0);
+  }
+
+  %40, %43 {
+    -webkit-geçiş-zamanlama-fonksiyonu: kübik-bezier(0.755, 0.050, 0.855, 0.060);
+            geçiş-zamanlama-fonksiyonu: kübik-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -30px, 0);
+            dönüştürme: translate3d(0, -30px, 0);
+  }
+
+  %70 {
+    -webkit-geçiş-zamanlama-fonksiyonu: kübik-bezier(0.755, 0.050, 0.855, 0.060);
+            geçiş-zamanlama-fonksiyonu: kübik-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -15px, 0);
+            dönüştürme: translate3d(0, -15px, 0);
+  }
+
+  %90 {
+    -webkit-transform: translate3d(0,-4px,0);
+            dönüştürme: translate3d(0,-4px,0);
+  }
+}
+
+@keyframes sıçrama {
+  %0, %20, %53, %80, %100 {
+    -webkit-geçiş-zamanlama-fonksiyonu: kübik-bezier(0.215, 0.610, 0.355, 1.000);
+            geçiş-zamanlama-fonksiyonu: kübik-bezier(0.215, 0.610, 0.355, 1.000);
+    -webkit-dönüşüm: translate3d(0,0,0);
+            dönüştürme: translate3d(0,0,0);
+  }
+
+  %40, %43 {
+    -webkit-geçiş-zamanlama-fonksiyonu: kübik-bezier(0.755, 0.050, 0.855, 0.060);
+            geçiş-zamanlama-fonksiyonu: kübik-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -30px, 0);
+            dönüştürme: translate3d(0, -30px, 0);
+  }
+
+  %70 {
+    -webkit-geçiş-zamanlama-fonksiyonu: kübik-bezier(0.755, 0.050, 0.855, 0.060);
+            geçiş-zamanlama-fonksiyonu: kübik-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -15px, 0);
+            dönüştürme: translate3d(0, -15px, 0);
+  }
+
+  %90 {
+    -webkit-transform: translate3d(0,-4px,0);
+            dönüştürme: translate3d(0,-4px,0);
+  }
+}
+
+.sıçrama {
+  -webkit-animasyon-adı: sıçrama;
+          animasyon adı: sıçrama;
+  -webkit-transform-origin: orta alt;
+      -ms-transform-origin: orta alt;
+          transform-origin: orta alt;
+}
+
+@-webkit-keyframes flash {
+  %0, %50, %100 {
+    opaklık: 1;
+  }
+
+  %25, %75 {
+    opaklık: 0;
+  }
+}
+
+@anahtar kareler flaş {
+  %0, %50, %100 {
+    opaklık: 1;
+  }
+
+  %25, %75 {
+    opaklık: 0;
+  }
+}
+
+.flaş {
+  -webkit-animasyon-adı: flash;
+          animasyon adı: flash;
+}
+
+/* orijinal olarak Nick Pettit tarafından yazılmıştır - https://github.com/nickpettit/glide */
+
+@-webkit-keyframes darbe {
+  %0 {
+    -webkit-dönüşüm: ölçek3d(1, 1, 1);
+            dönüştürme: ölçek3d(1, 1, 1);
+  }
+
+  %50 {
+    -webkit-dönüşüm: ölçek3d(1.05, 1.05, 1.05);
+            dönüştürme: ölçek3d(1.05, 1.05, 1.05);
+  }
+
+  100% {
+    -webkit-dönüşüm: ölçek3d(1, 1, 1);
+            dönüştürme: ölçek3d(1, 1, 1);
+  }
+}
+
+@keyframes darbe {
+  %0 {
+    -webkit-dönüşüm: ölçek3d(1, 1, 1);
+            dönüştürme: ölçek3d(1, 1, 1);
+  }
+
+  %50 {
+    -webkit-dönüşüm: ölçek3d(1.05, 1.05, 1.05);
+            dönüştürme: ölçek3d(1.05, 1.05, 1.05);
+  }
+
+  100% {
+    -webkit-dönüşüm: ölçek3d(1, 1, 1);
+            dönüştürme: ölçek3d(1, 1, 1);
+  }
+}
+
+.nabız {
+  -webkit-animasyon-adı: nabız;
+          animasyon adı: darbe;
+}
+
+@-webkit-keyframes rubberBand {
+  %0 {
+    -webkit-dönüşüm: ölçek3d(1, 1, 1);
+            dönüştürme: ölçek3d(1, 1, 1);
+  }
+
+  %30 {
+    -webkit-dönüşüm: ölçek3d(1.25, 0.75, 1);
+            dönüştürme: ölçek3d(1.25, 0.75, 1);
+  }
+
+  %40 {
+    -webkit-dönüşüm: ölçek3d(0.75, 1.25, 1);
+            dönüştürme: ölçek3d(0,75, 1,25, 1);
+  }
+
+  %50 {
+    -webkit-dönüşüm: ölçek3d(1.15, 0.85, 1);
+            dönüştürme: ölçek3d(1.15, 0.85, 1);
+  }
+
+  %65 {
+    -webkit-dönüşüm: ölçek3d(.95, 1.05, 1);
+            dönüştürme: ölçek3d(.95, 1.05, 1);
+  }
+
+  %75 {
+    -webkit-dönüşüm: ölçek3d(1.05, .95, 1);
+            dönüştürme: ölçek3d(1.05, .95, 1);
+  }
+
+  100% {
+    -webkit-dönüşüm: ölçek3d(1, 1, 1);
+            dönüştürme: ölçek3d(1, 1, 1);
+  }
+}
+
+@keyframes lastik bant {
+  %0 {
+    -webkit-dönüşüm: ölçek3d(1, 1, 1);
+            dönüştürme: ölçek3d(1, 1, 1);
+  }
+
+  %30 {
+    -webkit-dönüşüm: ölçek3d(1.25, 0.75, 1);
+            dönüştürme: ölçek3d(1.25, 0.75, 1);
+  }
+
+  %40 {
+    -webkit-dönüşüm: ölçek3d(0.75, 1.25, 1);
+            dönüştürme: ölçek3d(0,75, 1,25, 1);
+  }
+
+  %50 {
+    -webkit-dönüşüm: ölçek3d(1.15, 0.85, 1);
+            dönüştürme: ölçek3d(1.15, 0.85, 1);
+  }
+
+  %65 {
+    -webkit-dönüşüm: ölçek3d(.95, 1.05, 1);
+            dönüştürme: ölçek3d(.95, 1.05, 1);
+  }
+
+  %75 {
+    -webkit-dönüşüm: ölçek3d(1.05, .95, 1);
+            dönüştürme: ölçek3d(1.05, .95, 1);
+  }
+
+  100% {
+    -webkit-dönüşüm: ölçek3d(1, 1, 1);
+            dönüştürme: ölçek3d(1, 1, 1);
+  }
+}
+
+.rubberBant {
+  -webkit-animasyon-adı: rubberBand;
+          animasyon adı: rubberBand;
+}
+
+@-webkit-keyframes sallamak {
+  %0, %100 {
+    -webkit-transform: translate3d(0, 0, 0);
+            dönüştürme: translate3d(0, 0, 0);
+  }
+
+  %10, %30, %50, %70, %90 {
+    -webkit-transform: translate3d(-10px, 0, 0);
+            dönüştürme: translate3d(-10px, 0, 0);
+  }
+
+  %20, %40, %60, %80 {
+    -webkit-transform: translate3d(10px, 0, 0);
+            dönüştürme: translate3d(10px, 0, 0);
+  }
+}
+
+@keyframes sallamak {
+  %0, %100 {
+    -webkit-transform: translate3d(0, 0, 0);
+            dönüştürme: translate3d(0, 0, 0);
+  }
+
+  %10, %30, %50, %70, %90 {
+    -webkit-transform: translate3d(-10px, 0, 0);
+            dönüştürme: translate3d(-10px, 0, 0);
+  }
+
+  %20, %40, %60, %80 {
+    -webkit-transform: translate3d(10px, 0, 0);
+            dönüştürme: translate3d(10px, 0, 0);
+  }
+}
+
+.sallamak {
+  -webkit-animasyon-adı: sallayın;
+          animasyon adı: sallamak;
+}
+
+@-webkit-keyframes salıncak {
+  %20 {
+    -webkit-dönüşüm: rotate3d(0, 0, 1, 15deg);
+            dönüştürme: rotate3d(0, 0, 1, 15deg);
+  }
+
+  %40 {
+    -webkit-dönüşüm: rotate3d(0, 0, 1, -10deg);
+            dönüştürme: rotate3d(0, 0, 1, -10deg);
+  }
+
+  %60 {
+    -webkit-dönüşüm: rotate3d(0, 0, 1, 5deg);
+            dönüştürme: rotate3d(0, 0, 1, 5deg);
+  }
+
+  %80 {
+    -webkit-dönüşüm: rotate3d(0, 0, 1, -5deg);
+            dönüştürme: rotate3d(0, 0, 1, -5deg);
+  }
+
+  100% {
+    -webkit-dönüşüm: rotate3d(0, 0, 1, 0deg);
+            dönüştürme: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+@keyframes salıncak {
+  %20 {
+    -webkit-dönüşüm: rotate3d(0, 0, 1, 15deg);
+            dönüştürme: rotate3d(0, 0, 1, 15deg);
+  }
+
+  %40 {
+    -webkit-dönüşüm: rotate3d(0, 0, 1, -10deg);
+            dönüştürme: rotate3d(0, 0, 1, -10deg);
+  }
+
+  %60 {
+    -webkit-dönüşüm: rotate3d(0, 0, 1, 5deg);
+            dönüştürme: rotate3d(0, 0, 1, 5deg);
+  }
+
+  %80 {
+    -webkit-dönüşüm: rotate3d(0, 0, 1, -5deg);
+            dönüştürme: rotate3d(0, 0, 1, -5deg);
+  }
+
+  100% {
+    -webkit-dönüşüm: rotate3d(0, 0, 1, 0deg);
+            dönüştürme: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+.sallanmak {
+  -webkit-transform-origin: üst merkez;
+      -ms-transform-origin: üst orta;
+          transform-origin: üst merkez;
+  -webkit-animasyon-adı: salıncak;
+          animasyon adı: salıncak;
+}
+
+@-webkit-keyframes tada {
+  %0 {
+    -webkit-dönüşüm: ölçek3d(1, 1, 1);
+            dönüştürme: ölçek3d(1, 1, 1);
+  }
+
+  %10, %20 {
+    -webkit-dönüşüm: ölçek3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+            dönüştürme: ölçek3d(.9, .9, .9) döndürme3d(0, 0, 1, -3deg);
+  }
+
+
+  %30, %50, %70, %90 {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+            dönüştürme: ölçek3d(1.1, 1.1, 1.1) döndürme3d(0, 0, 1, 3 derece);
+  }
+
+  %40, %60, %80 {
+    -webkit-dönüşüm: ölçek3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+            dönüştürme: ölçek3d(1.1, 1.1, 1.1) döndürme3d(0, 0, 1, -3deg);
+  }
+
+  100% {
+    -webkit-dönüşüm: ölçek3d(1, 1, 1);
+            dönüştürme: ölçek3d(1, 1, 1);
+  }
+}
+
+@keyframes tada {
+  %0 {
+    -webkit-dönüşüm: ölçek3d(1, 1, 1);
+            dönüştürme: ölçek3d(1, 1, 1);
+  }
+
+  %10, %20 {
+    -webkit-dönüşüm: ölçek3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+            dönüştürme: ölçek3d(.9, .9, .9) döndürme3d(0, 0, 1, -3deg);
+  }
+
+  %30, %50, %70, %90 {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+            dönüştürme: ölçek3d(1.1, 1.1, 1.1) döndürme3d(0, 0, 1, 3 derece);
+  }
+
+  %40, %60, %80 {
+    -webkit-dönüşüm: ölçek3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+            dönüştürme: ölçek3d(1.1, 1.1, 1.1) döndürme3d(0, 0, 1, -3deg);
+  }
+
+  100% {
+    -webkit-dönüşüm: ölçek3d(1, 1, 1);
+            dönüştürme: ölçek3d(1, 1, 1);
+  }
+}
+
+.tada {
+  -webkit-animasyon-adı: tada;
+          animasyon adı: tada;
+}
+
+/* orijinal olarak Nick Pettit tarafından yazılmıştır - https://github.com/nickpettit/glide */
+
+@-webkit-anahtar kareler sallanıyor {
+  %0 {
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+  }
+
+  %15 {
+    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+            dönüştürme: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+
+  %30 {
+    -webkit-dönüşüm: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+            dönüştürme: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+
+  %45 {
+    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+            dönüştürme: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+
+  %60 {
+    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+            dönüştürme: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+
+  %75 {
+    -webkit-dönüşüm: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+            dönüştürme: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+
+  100% {
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+  }
+}
+
+@keyframes sallanıyor {
+  %0 {
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+  }
+
+  %15 {
+    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+            dönüştürme: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+
+  %30 {
+    -webkit-dönüşüm: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+            dönüştürme: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+
+  %45 {
+    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+            dönüştürme: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+
+  %60 {
+    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+            dönüştürme: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+
+  %75 {
+    -webkit-dönüşüm: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+            dönüştürme: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+
+  100% {
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+  }
+}
+
+.yalpalamak {
+  -webkit-animasyon-adı: yalpalama;
+          animasyon adı: yalpalama;
+}
+
+@-webkit-anahtar kareler sıçrama {
+  %0, %20, %40, %60, %80, %100 {
+    -webkit-geçiş-zamanlama-fonksiyonu: kübik-bezier(0.215, 0.610, 0.355, 1.000);
+            geçiş-zamanlama-fonksiyonu: kübik-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  %0 {
+    opaklık: 0;
+    -webkit-dönüşüm: ölçek3d(.3, .3, .3);
+            dönüştürme: ölçek3d(.3, .3, .3);
+  }
+
+  %20 {
+    -webkit-dönüşüm: ölçek3d(1.1, 1.1, 1.1);
+            dönüştürme: ölçek3d(1.1, 1.1, 1.1);
+  }
+
+  %40 {
+    -webkit-dönüşüm: ölçek3d(.9, .9, .9);
+            dönüştürme: ölçek3d(.9, .9, .9);
+  }
+
+  %60 {
+    opaklık: 1;
+    -webkit-dönüşüm: ölçek3d(1.03, 1.03, 1.03);
+            dönüştürme: ölçek3d(1.03, 1.03, 1.03);
+  }
+
+  %80 {
+    -webkit-dönüşüm: ölçek3d(.97, .97, .97);
+            dönüştürme: ölçek3d(.97, .97, .97);
+  }
+
+  100% {
+    opaklık: 1;
+    -webkit-dönüşüm: ölçek3d(1, 1, 1);
+            dönüştürme: ölçek3d(1, 1, 1);
+  }
+}
+
+@anahtar kareler sıçrama {
+  %0, %20, %40, %60, %80, %100 {
+    -webkit-geçiş-zamanlama-fonksiyonu: kübik-bezier(0.215, 0.610, 0.355, 1.000);
+            geçiş-zamanlama-fonksiyonu: kübik-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  %0 {
+    opaklık: 0;
+    -webkit-dönüşüm: ölçek3d(.3, .3, .3);
+            dönüştürme: ölçek3d(.3, .3, .3);
+  }
+
+  %20 {
+    -webkit-dönüşüm: ölçek3d(1.1, 1.1, 1.1);
+            dönüştürme: ölçek3d(1.1, 1.1, 1.1);
+  }
+
+  %40 {
+    -webkit-dönüşüm: ölçek3d(.9, .9, .9);
+            dönüştürme: ölçek3d(.9, .9, .9);
+  }
+
+  %60 {
+    opaklık: 1;
+    -webkit-dönüşüm: ölçek3d(1.03, 1.03, 1.03);
+            dönüştürme: ölçek3d(1.03, 1.03, 1.03);
+  }
+
+  %80 {
+    -webkit-dönüşüm: ölçek3d(.97, .97, .97);
+            dönüştürme: ölçek3d(.97, .97, .97);
+  }
+
+  100% {
+    opaklık: 1;
+    -webkit-dönüşüm: ölçek3d(1, 1, 1);
+            dönüştürme: ölçek3d(1, 1, 1);
+  }
+}
+
+.bounceIn {
+  -webkit-animasyon-adı: hemen çıkma;
+          animasyon-adı: sıçramaIn;
+  -webkit-animasyon-süresi: .75 sn;
+          animasyon süresi: .75 sn;
+}
+
+@-webkit-anahtar kareler sıçramaInDown {
+  %0, %60, %75, %90, %100 {
+    -webkit-geçiş-zamanlama-fonksiyonu: kübik-bezier(0.215, 0.610, 0.355, 1.000);
+            geçiş-zamanlama-fonksiyonu: kübik-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  %0 {
+    opaklık: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+            dönüştürme: translate3d(0, -3000px, 0);
+  }
+
+  %60 {
+    opaklık: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+            dönüştürme: translate3d(0, 25px, 0);
+  }
+
+  %75 {
+    -webkit-transform: translate3d(0, -10px, 0);
+            dönüştürme: translate3d(0, -10px, 0);
+  }
+
+  %90 {
+    -webkit-transform: translate3d(0, 5px, 0);
+            dönüştürme: translate3d(0, 5px, 0);
+  }
+
+  100% {
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+  }
+}
+
+@anahtar çerçeveler sıçramaInDown {
+  %0, %60, %75, %90, %100 {
+    -webkit-geçiş-zamanlama-fonksiyonu: kübik-bezier(0.215, 0.610, 0.355, 1.000);
+            geçiş-zamanlama-fonksiyonu: kübik-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  %0 {
+    opaklık: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+            dönüştürme: translate3d(0, -3000px, 0);
+  }
+
+  %60 {
+    opaklık: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+            dönüştürme: translate3d(0, 25px, 0);
+  }
+
+  %75 {
+    -webkit-transform: translate3d(0, -10px, 0);
+            dönüştürme: translate3d(0, -10px, 0);
+  }
+
+  %90 {
+    -webkit-transform: translate3d(0, 5px, 0);
+            dönüştürme: translate3d(0, 5px, 0);
+  }
+
+  100% {
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+  }
+}
+
+.bounceInDown {
+  -webkit-animasyon-adı: sıçramaInDown;
+          animasyon-adı: sıçramaInDown;
+}
+
+@-webkit-keyframesounceInLeft {
+  %0, %60, %75, %90, %100 {
+    -webkit-geçiş-zamanlama-fonksiyonu: kübik-bezier(0.215, 0.610, 0.355, 1.000);
+            geçiş-zamanlama-fonksiyonu: kübik-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  %0 {
+    opaklık: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+            dönüştürme: translate3d(-3000px, 0, 0);
+  }
+
+  %60 {
+    opaklık: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+            dönüştürme: translate3d(25px, 0, 0);
+  }
+
+  %75 {
+    -webkit-transform: translate3d(-10px, 0, 0);
+            dönüştürme: translate3d(-10px, 0, 0);
+  }
+
+  %90 {
+    -webkit-transform: translate3d(5px, 0, 0);
+            dönüştürme: translate3d(5px, 0, 0);
+  }
+
+  100% {
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+  }
+}
+
+@anahtar çerçeveler sıçramaInLeft {
+  %0, %60, %75, %90, %100 {
+    -webkit-geçiş-zamanlama-fonksiyonu: kübik-bezier(0.215, 0.610, 0.355, 1.000);
+            geçiş-zamanlama-fonksiyonu: kübik-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  %0 {
+    opaklık: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+            dönüştürme: translate3d(-3000px, 0, 0);
+  }
+
+  %60 {
+    opaklık: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+            dönüştürme: translate3d(25px, 0, 0);
+  }
+
+  %75 {
+    -webkit-transform: translate3d(-10px, 0, 0);
+            dönüştürme: translate3d(-10px, 0, 0);
+  }
+
+  %90 {
+    -webkit-transform: translate3d(5px, 0, 0);
+            dönüştürme: translate3d(5px, 0, 0);
+  }
+
+  100% {
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+  }
+}
+
+.bounceInLeft {
+  -webkit-animasyon-adı: BounceInLeft;
+          animasyon-adı:boundInLeft;
+}
+
+@-webkit-keyframesounceInRight {
+  %0, %60, %75, %90, %100 {
+    -webkit-geçiş-zamanlama-fonksiyonu: kübik-bezier(0.215, 0.610, 0.355, 1.000);
+            geçiş-zamanlama-fonksiyonu: kübik-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  %0 {
+    opaklık: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+            dönüştürme: translate3d(3000px, 0, 0);
+  }
+
+  %60 {
+    opaklık: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+            dönüştürme: translate3d(-25px, 0, 0);
+  }
+
+  %75 {
+    -webkit-transform: translate3d(10px, 0, 0);
+            dönüştürme: translate3d(10px, 0, 0);
+  }
+
+  %90 {
+    -webkit-transform: translate3d(-5px, 0, 0);
+            dönüştürme: translate3d(-5px, 0, 0);
+  }
+
+  100% {
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+  }
+}
+
+@anahtar kareler sıçramaInRight {
+  %0, %60, %75, %90, %100 {
+    -webkit-geçiş-zamanlama-fonksiyonu: kübik-bezier(0.215, 0.610, 0.355, 1.000);
+            geçiş-zamanlama-fonksiyonu: kübik-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  %0 {
+    opaklık: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+            dönüştürme: translate3d(3000px, 0, 0);
+  }
+
+  %60 {
+    opaklık: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+            dönüştürme: translate3d(-25px, 0, 0);
+  }
+
+  %75 {
+    -webkit-transform: translate3d(10px, 0, 0);
+            dönüştürme: translate3d(10px, 0, 0);
+  }
+
+  %90 {
+    -webkit-transform: translate3d(-5px, 0, 0);
+            dönüştürme: translate3d(-5px, 0, 0);
+  }
+
+  100% {
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+  }
+}
+
+.bounceInRight {
+  -webkit-animasyon-adı:ounceInRight;
+          animasyon-adı:ounceInRight;
+}
+
+@-webkit-anahtar kareler sıçramaInUp {
+  %0, %60, %75, %90, %100 {
+    -webkit-geçiş-zamanlama-fonksiyonu: kübik-bezier(0.215, 0.610, 0.355, 1.000);
+            geçiş-zamanlama-fonksiyonu: kübik-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  %0 {
+    opaklık: 0;
+    -webkit-transform: translate3d(0, 3000px, 0);
+            dönüştürme: translate3d(0, 3000px, 0);
+  }
+
+  %60 {
+    opaklık: 1;
+    -webkit-dönüşüm: translate3d(0, -20px, 0);
+            dönüştürme: translate3d(0, -20px, 0);
+  }
+
+  %75 {
+    -webkit-transform: translate3d(0, 10px, 0);
+            dönüştürme: translate3d(0, 10px, 0);
+  }
+
+  %90 {
+    -webkit-transform: translate3d(0, -5px, 0);
+            dönüştürme: translate3d(0, -5px, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            dönüştürme: translate3d(0, 0, 0);
+  }
+}
+
+@anahtar çerçeveler sıçramaInUp {
+  %0, %60, %75, %90, %100 {
+    -webkit-geçiş-zamanlama-fonksiyonu: kübik-bezier(0.215, 0.610, 0.355, 1.000);
+            geçiş-zamanlama-fonksiyonu: kübik-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  %0 {
+    opaklık: 0;
+    -webkit-transform: translate3d(0, 3000px, 0);
+            dönüştürme: translate3d(0, 3000px, 0);
+  }
+
+  %60 {
+    opaklık: 1;
+    -webkit-dönüşüm: translate3d(0, -20px, 0);
+            dönüştürme: translate3d(0, -20px, 0);
+  }
+
+  %75 {
+    -webkit-transform: translate3d(0, 10px, 0);
+            dönüştürme: translate3d(0, 10px, 0);
+  }
+
+  %90 {
+    -webkit-transform: translate3d(0, -5px, 0);
+            dönüştürme: translate3d(0, -5px, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            dönüştürme: translate3d(0, 0, 0);
+  }
+}
+
+.bounceInUp {
+  -webkit-animasyon-adı: sıçramaInUp;
+          animasyon-adı: sıçramaInUp;
+}
+
+@-webkit-anahtar kareler sıçrama {
+  %20 {
+    -webkit-dönüşüm: ölçek3d(.9, .9, .9);
+            dönüştürme: ölçek3d(.9, .9, .9);
+  }
+
+  %50, %55 {
+    opaklık: 1;
+    -webkit-dönüşüm: ölçek3d(1.1, 1.1, 1.1);
+            dönüştürme: ölçek3d(1.1, 1.1, 1.1);
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-dönüşüm: ölçek3d(.3, .3, .3);
+            dönüştürme: ölçek3d(.3, .3, .3);
+  }
+}
+
+@anahtar kareler sıçrama {
+  %20 {
+    -webkit-dönüşüm: ölçek3d(.9, .9, .9);
+            dönüştürme: ölçek3d(.9, .9, .9);
+  }
+
+  %50, %55 {
+    opaklık: 1;
+    -webkit-dönüşüm: ölçek3d(1.1, 1.1, 1.1);
+            dönüştürme: ölçek3d(1.1, 1.1, 1.1);
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-dönüşüm: ölçek3d(.3, .3, .3);
+            dönüştürme: ölçek3d(.3, .3, .3);
+  }
+}
+
+.bounceOut {
+  -webkit-animasyon-adı: sıçrama;
+          animasyon-adı: sıçrama;
+  -webkit-animasyon-süresi: .75 sn;
+          animasyon süresi: .75 sn;
+}
+
+@-webkit-anahtar kareler sıçramaOutDown {
+  %20 {
+    -webkit-transform: translate3d(0, 10px, 0);
+            dönüştürme: translate3d(0, 10px, 0);
+  }
+
+  %40, %45 {
+    opaklık: 1;
+    -webkit-dönüşüm: translate3d(0, -20px, 0);
+            dönüştürme: translate3d(0, -20px, 0);
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+            dönüştürme: translate3d(0, 2000px, 0);
+  }
+}
+
+@anahtar çerçeveler sıçramaOutDown {
+  %20 {
+    -webkit-transform: translate3d(0, 10px, 0);
+            dönüştürme: translate3d(0, 10px, 0);
+  }
+
+  %40, %45 {
+    opaklık: 1;
+    -webkit-dönüşüm: translate3d(0, -20px, 0);
+            dönüştürme: translate3d(0, -20px, 0);
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+            dönüştürme: translate3d(0, 2000px, 0);
+  }
+}
+
+.bounceOutDown {
+  -webkit-animasyon-adı: sıçramaOutDown;
+          animasyon-adı: sıçramaOutDown;
+}
+
+@-webkit-keyframesounceOutLeft {
+  %20 {
+    opaklık: 1;
+    -webkit-transform: translate3d(20px, 0, 0);
+            dönüştürme: translate3d(20px, 0, 0);
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+            dönüştürme: translate3d(-2000px, 0, 0);
+  }
+}
+
+@anahtar çerçeveler sıçramaOutLeft {
+  %20 {
+    opaklık: 1;
+    -webkit-transform: translate3d(20px, 0, 0);
+            dönüştürme: translate3d(20px, 0, 0);
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+            dönüştürme: translate3d(-2000px, 0, 0);
+  }
+}
+
+.bounceOutLeft {
+  -webkit-animasyon-adı:boundOutLeft;
+          animasyon-adı:boundOutLeft;
+}
+
+@-webkit-keyframesounceOutRight {
+  %20 {
+    opaklık: 1;
+    -webkit-transform: translate3d(-20px, 0, 0);
+            dönüştürme: translate3d(-20px, 0, 0);
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+            dönüştürme: translate3d(2000px, 0, 0);
+  }
+}
+
+@anahtar çerçeveler sıçramaOutRight {
+  %20 {
+    opaklık: 1;
+    -webkit-transform: translate3d(-20px, 0, 0);
+            dönüştürme: translate3d(-20px, 0, 0);
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+            dönüştürme: translate3d(2000px, 0, 0);
+  }
+}
+
+.bounceOutRight {
+  -webkit-animasyon-adı:boundOutRight;
+          animasyon-adı:boundOutRight;
+}
+
+@-webkit-keyframesounceOutUp {
+  %20 {
+    -webkit-transform: translate3d(0, -10px, 0);
+            dönüştürme: translate3d(0, -10px, 0);
+  }
+
+  %40, %45 {
+    opaklık: 1;
+    -webkit-transform: translate3d(0, 20px, 0);
+            dönüştürme: translate3d(0, 20px, 0);
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-dönüşüm: translate3d(0, -2000px, 0);
+            dönüştürme: translate3d(0, -2000px, 0);
+  }
+}
+
+@anahtar çerçeveler sıçramaÇıkış {
+  %20 {
+    -webkit-transform: translate3d(0, -10px, 0);
+            dönüştürme: translate3d(0, -10px, 0);
+  }
+
+  %40, %45 {
+    opaklık: 1;
+    -webkit-transform: translate3d(0, 20px, 0);
+            dönüştürme: translate3d(0, 20px, 0);
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-dönüşüm: translate3d(0, -2000px, 0);
+            dönüştürme: translate3d(0, -2000px, 0);
+  }
+}
+
+.bounceOutUp {
+  -webkit-animasyon-adı: BounceOutUp;
+          animasyon-adı:boundOutUp;
+}
+
+@-webkit-keyframes fadeIn {
+  %0 {opaklık: 0;}
+  %100 {opaklık: 1;}
+}
+
+@keyframes fadeIn {
+  %0 {opaklık: 0;}
+  %100 {opaklık: 1;}
+}
+
+.fadeIn {
+  -webkit-animasyon-adı: fadeIn;
+          animasyon-adı: fadeIn;
+}
+
+@-webkit-keyframes fadeInDown {
+  %0 {
+    opaklık: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+            dönüştürme: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opaklık: 1;
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+  }
+}
+
+@keyframes fadeInDown {
+  %0 {
+    opaklık: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+            dönüştürme: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opaklık: 1;
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+  }
+}
+
+.fadeInDown {
+  -webkit-animasyon-adı: fadeInDown;
+          animasyon-adı: fadeInDown;
+}
+
+@-webkit-keyframes fadeInDownBig {
+  %0 {
+    opaklık: 0;
+    -webkit-dönüşüm: translate3d(0, -2000px, 0);
+            dönüştürme: translate3d(0, -2000px, 0);
+  }
+
+  100% {
+    opaklık: 1;
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+  }
+}
+
+@keyframes fadeInDownBig {
+  %0 {
+    opaklık: 0;
+    -webkit-dönüşüm: translate3d(0, -2000px, 0);
+            dönüştürme: translate3d(0, -2000px, 0);
+  }
+
+  100% {
+    opaklık: 1;
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+  }
+}
+
+.fadeInDownBig {
+  -webkit-animasyon-adı: fadeInDownBig;
+          animasyon-adı: fadeInDownBig;
+}
+
+@-webkit-keyframes fadeInLeft {
+  %0 {
+    opaklık: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            dönüştürme: translate3d(-100%, 0, 0);
+  }
+
+  100% {
+    opaklık: 1;
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+  }
+}
+
+@keyframes fadeInLeft {
+  %0 {
+    opaklık: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            dönüştürme: translate3d(-100%, 0, 0);
+  }
+
+  100% {
+    opaklık: 1;
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+  }
+}
+
+.fadeInLeft {
+  -webkit-animasyon-adı: fadeInLeft;
+          animasyon adı: fadeInLeft;
+}
+
+@-webkit-keyframes fadeInLeftBig {
+  %0 {
+    opaklık: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+            dönüştürme: translate3d(-2000px, 0, 0);
+  }
+
+  100% {
+    opaklık: 1;
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+  }
+}
+
+@keyframes fadeInLeftBig {
+  %0 {
+    opaklık: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+            dönüştürme: translate3d(-2000px, 0, 0);
+  }
+
+  100% {
+    opaklık: 1;
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+  }
+}
+
+.fadeInLeftBig {
+  -webkit-animasyon-adı: fadeInLeftBig;
+          animasyon-adı: fadeInLeftBig;
+}
+
+@-webkit-keyframes fadeInRight {
+  %0 {
+    opaklık: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+            dönüştürme: translate3d(%100, 0, 0);
+  }
+
+  100% {
+    opaklık: 1;
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+  }
+}
+
+@keyframes fadeInRight {
+  %0 {
+    opaklık: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+            dönüştürme: translate3d(%100, 0, 0);
+  }
+
+  100% {
+    opaklık: 1;
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+  }
+}
+
+.fadeInRight {
+  -webkit-animasyon-adı: fadeInRight;
+          animasyon-adı: fadeInRight;
+}
+
+@-webkit-keyframes fadeInRightBig {
+  %0 {
+    opaklık: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+            dönüştürme: translate3d(2000px, 0, 0);
+  }
+
+  100% {
+    opaklık: 1;
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+  }
+}
+
+@keyframes fadeInRightBig {
+  %0 {
+    opaklık: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+            dönüştürme: translate3d(2000px, 0, 0);
+  }
+
+  100% {
+
+    opaklık: 1;
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+  }
+}
+
+.fadeInRightBig {
+  -webkit-animasyon-adı: fadeInRightBig;
+          animasyon-adı: fadeInRightBig;
+}
+
+@-webkit-keyframes fadeInUp {
+  %0 {
+    opaklık: 0;
+    -webkit-transform: translate3d(0, %100, 0);
+            dönüştürme: translate3d(0, %100, 0);
+  }
+
+  100% {
+    opaklık: 1;
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+  }
+}
+
+@keyframes fadeInUp {
+  %0 {
+    opaklık: 0;
+    -webkit-transform: translate3d(0, %100, 0);
+            dönüştürme: translate3d(0, %100, 0);
+  }
+
+  100% {
+    opaklık: 1;
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+  }
+}
+
+.fadeInUp {
+  -webkit-animasyon-adı: fadeInUp;
+          animasyon adı: fadeInUp;
+}
+
+@-webkit-keyframes fadeInUpBig {
+  %0 {
+    opaklık: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+            dönüştürme: translate3d(0, 2000px, 0);
+  }
+
+  100% {
+    opaklık: 1;
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+  }
+}
+
+@keyframes fadeInUpBig {
+  %0 {
+    opaklık: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+            dönüştürme: translate3d(0, 2000px, 0);
+  }
+
+  100% {
+    opaklık: 1;
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+  }
+}
+
+.fadeInUpBig {
+  -webkit-animasyon-adı: fadeInUpBig;
+          animasyon-adı: fadeInUpBig;
+}
+
+@-webkit-keyframes fadeOut {
+  %0 {opaklık: 1;}
+  %100 {opaklık: 0;}
+}
+
+@keyframes fadeOut {
+  %0 {opaklık: 1;}
+  %100 {opaklık: 0;}
+}
+
+.fadeOut {
+  -webkit-animasyon-adı: fadeOut;
+          animasyon-adı: fadeOut;
+}
+
+@-webkit-keyframes fadeOutDown {
+  %0 {
+    opaklık: 1;
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-transform: translate3d(0, %100, 0);
+            dönüştürme: translate3d(0, %100, 0);
+  }
+}
+
+@keyframes fadeOutDown {
+  %0 {
+    opaklık: 1;
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-transform: translate3d(0, %100, 0);
+            dönüştürme: translate3d(0, %100, 0);
+  }
+}
+
+.fadeOutDown {
+  -webkit-animasyon-adı: fadeOutDown;
+          animasyon adı: fadeOutDown;
+}
+
+@-webkit-keyframes fadeOutDownBig {
+  %0 {
+    opaklık: 1;
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+            dönüştürme: translate3d(0, 2000px, 0);
+  }
+}
+
+@keyframes fadeOutDownBig {
+  %0 {
+    opaklık: 1;
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+            dönüştürme: translate3d(0, 2000px, 0);
+  }
+}
+
+.fadeOutDownBig {
+  -webkit-animasyon-adı: fadeOutDownBig;
+          animasyon adı: fadeOutDownBig;
+}
+
+@-webkit-keyframes fadeOutLeft {
+  %0 {
+    opaklık: 1;
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            dönüştürme: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes fadeOutLeft {
+  %0 {
+    opaklık: 1;
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            dönüştürme: translate3d(-100%, 0, 0);
+  }
+}
+
+.fadeOutLeft {
+  -webkit-animasyon-adı: fadeOutLeft;
+          animasyon adı: fadeOutLeft;
+}
+
+@-webkit-keyframes fadeOutLeftBig {
+  %0 {
+    opaklık: 1;
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+            dönüştürme: translate3d(-2000px, 0, 0);
+  }
+}
+
+@keyframes fadeOutLeftBig {
+  %0 {
+    opaklık: 1;
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+            dönüştürme: translate3d(-2000px, 0, 0);
+  }
+}
+
+.fadeOutLeftBig {
+  -webkit-animasyon-adı: fadeOutLeftBig;
+          animasyon adı: fadeOutLeftBig;
+}
+
+@-webkit-keyframes fadeOutRight {
+  %0 {
+    opaklık: 1;
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+            dönüştürme: translate3d(%100, 0, 0);
+  }
+}
+
+@keyframes fadeOutRight {
+  %0 {
+    opaklık: 1;
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+            dönüştürme: translate3d(%100, 0, 0);
+  }
+}
+
+.fadeOutRight {
+  -webkit-animasyon-adı: fadeOutRight;
+          animasyon adı: fadeOutRight;
+}
+
+@-webkit-keyframes fadeOutRightBig {
+  %0 {
+    opaklık: 1;
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+            dönüştürme: translate3d(2000px, 0, 0);
+  }
+}
+
+@keyframes fadeOutRightBig {
+  %0 {
+    opaklık: 1;
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+            dönüştürme: translate3d(2000px, 0, 0);
+  }
+}
+
+.fadeOutRightBig {
+  -webkit-animasyon-adı: fadeOutRightBig;
+          animasyon-adı: fadeOutRightBig;
+}
+
+@-webkit-keyframes fadeOutUp {
+  %0 {
+    opaklık: 1;
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+            dönüştürme: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes fadeOutUp {
+  %0 {
+    opaklık: 1;
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+            dönüştürme: translate3d(0, -100%, 0);
+  }
+}
+
+.fadeOutUp {
+  -webkit-animasyon-adı: fadeOutUp;
+          animasyon adı: fadeOutUp;
+}
+
+@-webkit-keyframes fadeOutUpBig {
+  %0 {
+    opaklık: 1;
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-dönüşüm: translate3d(0, -2000px, 0);
+            dönüştürme: translate3d(0, -2000px, 0);
+  }
+}
+
+@keyframes fadeOutUpBig {
+  %0 {
+    opaklık: 1;
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-dönüşüm: translate3d(0, -2000px, 0);
+            dönüştürme: translate3d(0, -2000px, 0);
+  }
+}
+
+.fadeOutUpBig {
+  -webkit-animasyon-adı: fadeOutUpBig;
+          animasyon adı: fadeOutUpBig;
+}
+
+@-webkit-anahtar kareler çevir {
+  %0 {
+    -webkit-dönüşüm: perspektif(400px) rotate3d(0, 1, 0, -360deg);
+            dönüştürme: perspektif(400px) rotate3d(0, 1, 0, -360deg);
+    -webkit-animasyon-zamanlama-işlevi: kolaylaştırma;
+            animasyon-zamanlama-işlevi: kolaylaştırma;
+  }
+
+  %40 {
+    -webkit-transform: perspektif(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+            dönüştürme: perspektif(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    -webkit-animasyon-zamanlama-işlevi: kolaylaştırma;
+            animasyon-zamanlama-işlevi: kolaylaştırma;
+  }
+
+  %50 {
+    -webkit-transform: perspektif(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+            dönüştürme: perspektif(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    -webkit-animasyon-zamanlama-işlevi: kolaylık;
+            animasyon-zamanlama-işlevi: kolaylaştırma;
+  }
+
+  %80 {
+    -webkit-transform: perspektif(400px) ölçek3d(.95, .95, .95);
+            dönüştürme: perspektif(400px) ölçek3d(.95, .95, .95);
+    -webkit-animasyon-zamanlama-işlevi: kolaylık;
+            animasyon-zamanlama-işlevi: kolaylaştırma;
+  }
+
+  100% {
+    -webkit-dönüşüm: perspektif(400px);
+            dönüştürme: perspektif(400px);
+    -webkit-animasyon-zamanlama-işlevi: kolaylık;
+            animasyon-zamanlama-işlevi: kolaylaştırma;
+  }
+}
+
+@anahtar kareler çevir {
+  %0 {
+    -webkit-dönüşüm: perspektif(400px) rotate3d(0, 1, 0, -360deg);
+            dönüştürme: perspektif(400px) rotate3d(0, 1, 0, -360deg);
+    -webkit-animasyon-zamanlama-işlevi: kolaylaştırma;
+            animasyon-zamanlama-işlevi: kolaylaştırma;
+  }
+
+  %40 {
+    -webkit-transform: perspektif(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+            dönüştürme: perspektif(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    -webkit-animasyon-zamanlama-işlevi: kolaylaştırma;
+            animasyon-zamanlama-işlevi: kolaylaştırma;
+  }
+
+  %50 {
+    -webkit-transform: perspektif(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+            dönüştürme: perspektif(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    -webkit-animasyon-zamanlama-işlevi: kolaylık;
+            animasyon-zamanlama-işlevi: kolaylaştırma;
+  }
+
+  %80 {
+    -webkit-transform: perspektif(400px) ölçek3d(.95, .95, .95);
+            dönüştürme: perspektif(400px) ölçek3d(.95, .95, .95);
+    -webkit-animasyon-zamanlama-işlevi: kolaylık;
+            animasyon-zamanlama-işlevi: kolaylaştırma;
+  }
+
+  100% {
+    -webkit-dönüşüm: perspektif(400px);
+            dönüştürme: perspektif(400px);
+    -webkit-animasyon-zamanlama-işlevi: kolaylık;
+            animasyon-zamanlama-işlevi: kolaylaştırma;
+  }
+}
+
+.animasyonlu.flip {
+  -webkit-backface-görünürlük: görünür;
+          arka yüz görünürlüğü: görünür;
+  -webkit-animasyon-adı: çevir;
+          animasyon adı: çevir;
+}
+
+@-webkit-keyframes flipInX {
+  %0 {
+    -webkit-transform: perspektif(400px) rotate3d(1, 0, 0, 90deg);
+            dönüştürme: perspektif(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-geçiş-zamanlama-işlevi: kolaylık;
+            geçiş zamanlama işlevi: kolaylık;
+    opaklık: 0;
+  }
+
+  %40 {
+    -webkit-dönüşüm: perspektif(400px) rotate3d(1, 0, 0, -20deg);
+            dönüştürme: perspektif(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-geçiş-zamanlama-işlevi: kolaylık;
+            geçiş zamanlama işlevi: kolaylık;
+  }
+
+  %60 {
+    -webkit-transform: perspektif(400px) rotate3d(1, 0, 0, 10deg);
+            dönüştürme: perspektif(400px) rotate3d(1, 0, 0, 10deg);
+    opaklık: 1;
+  }
+
+  %80 {
+    -webkit-dönüşüm: perspektif(400px) rotate3d(1, 0, 0, -5deg);
+            dönüştürme: perspektif(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  100% {
+    -webkit-dönüşüm: perspektif(400px);
+            dönüştürme: perspektif(400px);
+  }
+}
+
+@keyframes flipInX {
+  %0 {
+    -webkit-transform: perspektif(400px) rotate3d(1, 0, 0, 90deg);
+            dönüştürme: perspektif(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-geçiş-zamanlama-işlevi: kolaylık;
+            geçiş zamanlama işlevi: kolaylık;
+    opaklık: 0;
+  }
+
+  %40 {
+    -webkit-dönüşüm: perspektif(400px) rotate3d(1, 0, 0, -20deg);
+            dönüştürme: perspektif(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-geçiş-zamanlama-işlevi: kolaylık;
+            geçiş zamanlama işlevi: kolaylık;
+  }
+
+  %60 {
+    -webkit-transform: perspektif(400px) rotate3d(1, 0, 0, 10deg);
+            dönüştürme: perspektif(400px) rotate3d(1, 0, 0, 10deg);
+    opaklık: 1;
+  }
+
+  %80 {
+    -webkit-dönüşüm: perspektif(400px) rotate3d(1, 0, 0, -5deg);
+            dönüştürme: perspektif(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  100% {
+    -webkit-dönüşüm: perspektif(400px);
+            dönüştürme: perspektif(400px);
+  }
+}
+
+.flipInX {
+  -webkit-backface-görünürlük: görünür !önemli;
+          arka yüz görünürlüğü: görünür !önemli;
+  -webkit-animasyon-adı: flipInX;
+          animasyon adı: flipInX;
+}
+
+@-webkit-keyframes flipInY {
+  %0 {
+    -webkit-dönüşüm: perspektif(400px) rotate3d(0, 1, 0, 90deg);
+            dönüştürme: perspektif(400px) rotate3d(0, 1, 0, 90deg);
+    -webkit-geçiş-zamanlama-işlevi: kolaylık;
+            geçiş zamanlama işlevi: kolaylık;
+    opaklık: 0;
+  }
+
+  %40 {
+    -webkit-dönüşüm: perspektif(400px) rotate3d(0, 1, 0, -20deg);
+            dönüştürme: perspektif(400px) rotate3d(0, 1, 0, -20deg);
+    -webkit-geçiş-zamanlama-işlevi: kolaylık;
+            geçiş zamanlama işlevi: kolaylık;
+  }
+
+  %60 {
+    -webkit-transform: perspektif(400px) rotate3d(0, 1, 0, 10deg);
+            dönüştürme: perspektif(400px) rotate3d(0, 1, 0, 10deg);
+    opaklık: 1;
+  }
+
+  %80 {
+    -webkit-dönüşüm: perspektif(400px) rotate3d(0, 1, 0, -5deg);
+            dönüştürme: perspektif(400px) rotate3d(0, 1, 0, -5deg);
+  }
+
+  100% {
+    -webkit-dönüşüm: perspektif(400px);
+            dönüştürme: perspektif(400px);
+  }
+}
+
+@keyframes flipInY {
+  %0 {
+    -webkit-dönüşüm: perspektif(400px) rotate3d(0, 1, 0, 90deg);
+            dönüştürme: perspektif(400px) rotate3d(0, 1, 0, 90deg);
+    -webkit-geçiş-zamanlama-işlevi: kolaylık;
+            geçiş zamanlama işlevi: kolaylık;
+    opaklık: 0;
+  }
+
+  %40 {
+    -webkit-dönüşüm: perspektif(400px) rotate3d(0, 1, 0, -20deg);
+            dönüştürme: perspektif(400px) rotate3d(0, 1, 0, -20deg);
+    -webkit-geçiş-zamanlama-işlevi: kolaylık;
+            geçiş zamanlama işlevi: kolaylık;
+  }
+
+  %60 {
+    -webkit-transform: perspektif(400px) rotate3d(0, 1, 0, 10deg);
+            dönüştürme: perspektif(400px) rotate3d(0, 1, 0, 10deg);
+    opaklık: 1;
+  }
+
+  %80 {
+    -webkit-dönüşüm: perspektif(400px) rotate3d(0, 1, 0, -5deg);
+            dönüştürme: perspektif(400px) rotate3d(0, 1, 0, -5deg);
+  }
+
+  100% {
+    -webkit-dönüşüm: perspektif(400px);
+            dönüştürme: perspektif(400px);
+  }
+}
+
+.flipInY {
+  -webkit-backface-görünürlük: görünür !önemli;
+          arka yüz görünürlüğü: görünür !önemli;
+  -webkit-animasyon-adı: flipInY;
+          animasyon adı: flipInY;
+}
+
+@-webkit-keyframes flipOutX {
+  %0 {
+    -webkit-dönüşüm: perspektif(400px);
+            dönüştürme: perspektif(400px);
+  }
+
+  %30 {
+    -webkit-dönüşüm: perspektif(400px) rotate3d(1, 0, 0, -20deg);
+            dönüştürme: perspektif(400px) rotate3d(1, 0, 0, -20deg);
+    opaklık: 1;
+  }
+
+  100% {
+    -webkit-transform: perspektif(400px) rotate3d(1, 0, 0, 90deg);
+            dönüştürme: perspektif(400px) rotate3d(1, 0, 0, 90deg);
+    opaklık: 0;
+  }
+}
+
+@keyframes flipOutX {
+  %0 {
+    -webkit-dönüşüm: perspektif(400px);
+            dönüştürme: perspektif(400px);
+  }
+
+  %30 {
+    -webkit-dönüşüm: perspektif(400px) rotate3d(1, 0, 0, -20deg);
+            dönüştürme: perspektif(400px) rotate3d(1, 0, 0, -20deg);
+    opaklık: 1;
+  }
+
+  100% {
+    -webkit-transform: perspektif(400px) rotate3d(1, 0, 0, 90deg);
+            dönüştürme: perspektif(400px) rotate3d(1, 0, 0, 90deg);
+    opaklık: 0;
+  }
+}
+
+.flipOutX {
+  -webkit-animasyon-adı: flipOutX;
+          animasyon adı: flipOutX;
+  -webkit-animasyon-süresi: .75 sn;
+          animasyon süresi: .75 sn;
+  -webkit-backface-görünürlük: görünür !önemli;
+          arka yüz görünürlüğü: görünür !önemli;
+}
+
+@-webkit-keyframes flipOutY {
+  %0 {
+    -webkit-dönüşüm: perspektif(400px);
+            dönüştürme: perspektif(400px);
+  }
+
+  %30 {
+    -webkit-dönüşüm: perspektif(400px) rotate3d(0, 1, 0, -15deg);
+            dönüştürme: perspektif(400px) rotate3d(0, 1, 0, -15deg);
+    opaklık: 1;
+  }
+
+  100% {
+    -webkit-dönüşüm: perspektif(400px) rotate3d(0, 1, 0, 90deg);
+            dönüştürme: perspektif(400px) rotate3d(0, 1, 0, 90deg);
+    opaklık: 0;
+  }
+}
+
+@keyframes flipOutY {
+  %0 {
+    -webkit-dönüşüm: perspektif(400px);
+            dönüştürme: perspektif(400px);
+  }
+
+  %30 {
+    -webkit-dönüşüm: perspektif(400px) rotate3d(0, 1, 0, -15deg);
+            dönüştürme: perspektif(400px) rotate3d(0, 1, 0, -15deg);
+    opaklık: 1;
+  }
+
+  100% {
+    -webkit-dönüşüm: perspektif(400px) rotate3d(0, 1, 0, 90deg);
+            dönüştürme: perspektif(400px) rotate3d(0, 1, 0, 90deg);
+    opaklık: 0;
+  }
+}
+
+.flipOutY {
+  -webkit-backface-görünürlük: görünür !önemli;
+          arka yüz görünürlüğü: görünür !önemli;
+  -webkit-animasyon-adı: flipOutY;
+          animasyon adı: flipOutY;
+  -webkit-animasyon-süresi: .75 sn;
+          animasyon süresi: .75 sn;
+}
+
+@-webkit-keyframes lightSpeedIn {
+  %0 {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+            dönüştürme: translate3d(100%, 0, 0) skewX(-30deg);
+    opaklık: 0;
+  }
+
+  %60 {
+    -webkit-dönüşümü: skewX(20deg);
+            dönüştürme: skewX(20deg);
+    opaklık: 1;
+  }
+
+  %80 {
+    -webkit-dönüşüm: skewX(-5deg);
+            dönüştürme: skewX(-5deg);
+    opaklık: 1;
+  }
+
+  100% {
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+    opaklık: 1;
+  }
+}
+
+@keyframes lightSpeedIn {
+  %0 {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+            dönüştürme: translate3d(100%, 0, 0) skewX(-30deg);
+    opaklık: 0;
+  }
+
+  %60 {
+    -webkit-dönüşümü: skewX(20deg);
+            dönüştürme: skewX(20deg);
+    opaklık: 1;
+  }
+
+  %80 {
+    -webkit-dönüşüm: skewX(-5deg);
+            dönüştürme: skewX(-5deg);
+    opaklık: 1;
+  }
+
+  100% {
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+    opaklık: 1;
+  }
+}
+
+.lightSpeedIn {
+  -webkit-animasyon-adı: lightSpeedIn;
+          animasyon adı: lightSpeedIn;
+  -webkit-animasyon-zamanlama-işlevi: kolaylaştırma;
+          animasyon-zamanlama-işlevi: kolaylaştırma;
+}
+
+@-webkit-keyframes lightSpeedOut {
+  %0 {
+    opaklık: 1;
+  }
+
+  100% {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
+            dönüştürme: translate3d(100%, 0, 0) skewX(30deg);
+    opaklık: 0;
+  }
+}
+
+@keyframes lightSpeedOut {
+  %0 {
+    opaklık: 1;
+  }
+
+  100% {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
+            dönüştürme: translate3d(100%, 0, 0) skewX(30deg);
+    opaklık: 0;
+  }
+}
+
+.lightSpeedOut {
+  -webkit-animasyon-adı: lightSpeedOut;
+          animasyon adı: lightSpeedOut;
+  -webkit-animasyon-zamanlama-işlevi: kolaylık;
+          animasyon-zamanlama-işlevi: kolaylaştırma;
+}
+
+@-webkit-keyframes rotateIn {
+  %0 {
+    -webkit-transform-menşei: merkez;
+            transform-menşei: merkez;
+    -webkit-dönüşüm: rotate3d(0, 0, 1, -200deg);
+            dönüştürme: rotate3d(0, 0, 1, -200deg);
+    opaklık: 0;
+  }
+
+  100% {
+    -webkit-transform-menşei: merkez;
+            transform-menşei: merkez;
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+    opaklık: 1;
+  }
+}
+
+@keyframes rotateIn {
+  %0 {
+    -webkit-transform-menşei: merkez;
+            transform-menşei: merkez;
+    -webkit-dönüşüm: rotate3d(0, 0, 1, -200deg);
+            dönüştürme: rotate3d(0, 0, 1, -200deg);
+    opaklık: 0;
+  }
+
+  100% {
+    -webkit-transform-menşei: merkez;
+            transform-menşei: merkez;
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+    opaklık: 1;
+  }
+}
+
+.döndür {
+  -webkit-animasyon-adı: rotateIn;
+          animasyon-adı: rotateIn;
+}
+
+@-webkit-keyframes rotateInDownLeft {
+  %0 {
+    -webkit-transform-origin: sol alt;
+            transform-menşei: sol alt;
+    -webkit-dönüşüm: rotate3d(0, 0, 1, -45deg);
+            dönüştürme: rotate3d(0, 0, 1, -45deg);
+    opaklık: 0;
+  }
+
+  100% {
+    -webkit-transform-origin: sol alt;
+            transform-menşei: sol alt;
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+    opaklık: 1;
+  }
+}
+
+@keyframes rotateInDownLeft {
+  %0 {
+    -webkit-transform-origin: sol alt;
+            transform-menşei: sol alt;
+    -webkit-dönüşüm: rotate3d(0, 0, 1, -45deg);
+            dönüştürme: rotate3d(0, 0, 1, -45deg);
+    opaklık: 0;
+  }
+
+  100% {
+    -webkit-transform-origin: sol alt;
+            transform-menşei: sol alt;
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+    opaklık: 1;
+  }
+}
+
+.rotateInDownLeft {
+  -webkit-animasyon-adı: rotateInDownLeft;
+          animasyon-adı: rotateInDownLeft;
+}
+
+@-webkit-keyframes rotateInDownRight {
+  %0 {
+    -webkit-transform-origin: sağ alt;
+            transform-menşei: sağ alt;
+    -webkit-dönüşüm: rotate3d(0, 0, 1, 45deg);
+            dönüştürme: rotate3d(0, 0, 1, 45deg);
+    opaklık: 0;
+  }
+
+  100% {
+    -webkit-transform-origin: sağ alt;
+            transform-menşei: sağ alt;
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+    opaklık: 1;
+  }
+}
+
+@keyframes rotateInDownRight {
+  %0 {
+    -webkit-transform-origin: sağ alt;
+            transform-menşei: sağ alt;
+    -webkit-dönüşüm: rotate3d(0, 0, 1, 45deg);
+            dönüştürme: rotate3d(0, 0, 1, 45deg);
+    opaklık: 0;
+  }
+
+  100% {
+    -webkit-transform-origin: sağ alt;
+            transform-menşei: sağ alt;
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+    opaklık: 1;
+  }
+}
+
+.rotateInDownRight {
+  -webkit-animasyon-adı: rotateInDownRight;
+          animasyon-adı: rotateInDownRight;
+}
+
+@-webkit-keyframes rotateInUpLeft {
+  %0 {
+    -webkit-transform-origin: sol alt;
+            transform-menşei: sol alt;
+    -webkit-dönüşüm: rotate3d(0, 0, 1, 45deg);
+            dönüştürme: rotate3d(0, 0, 1, 45deg);
+    opaklık: 0;
+  }
+
+  100% {
+    -webkit-transform-origin: sol alt;
+            transform-menşei: sol alt;
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+    opaklık: 1;
+  }
+}
+
+@keyframes rotateInUpLeft {
+  %0 {
+    -webkit-transform-origin: sol alt;
+            transform-menşei: sol alt;
+    -webkit-dönüşüm: rotate3d(0, 0, 1, 45deg);
+            dönüştürme: rotate3d(0, 0, 1, 45deg);
+    opaklık: 0;
+  }
+
+  100% {
+    -webkit-transform-origin: sol alt;
+            transform-menşei: sol alt;
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+    opaklık: 1;
+  }
+}
+
+.rotateInUpLeft {
+  -webkit-animasyon-adı: rotateInUpLeft;
+          animasyon-adı: rotateInUpLeft;
+}
+
+@-webkit-keyframes rotateInUpRight {
+  %0 {
+    -webkit-transform-origin: sağ alt;
+            transform-menşei: sağ alt;
+    -webkit-dönüşüm: rotate3d(0, 0, 1, -90deg);
+            dönüştürme: rotate3d(0, 0, 1, -90deg);
+    opaklık: 0;
+  }
+
+  100% {
+    -webkit-transform-origin: sağ alt;
+            transform-menşei: sağ alt;
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+    opaklık: 1;
+  }
+}
+
+@keyframes rotateInUpRight {
+  %0 {
+    -webkit-transform-origin: sağ alt;
+            transform-menşei: sağ alt;
+    -webkit-dönüşüm: rotate3d(0, 0, 1, -90deg);
+            dönüştürme: rotate3d(0, 0, 1, -90deg);
+    opaklık: 0;
+  }
+
+  100% {
+    -webkit-transform-origin: sağ alt;
+            transform-menşei: sağ alt;
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+    opaklık: 1;
+  }
+}
+
+.rotateInUpRight {
+  -webkit-animasyon-adı: rotateInUpRight;
+          animasyon-adı: rotateInUpRight;
+}
+
+@-webkit-keyframes rotateOut {
+  %0 {
+    -webkit-transform-menşei: merkez;
+            transform-menşei: merkez;
+    opaklık: 1;
+  }
+
+  100% {
+    -webkit-transform-menşei: merkez;
+            transform-menşei: merkez;
+    -webkit-dönüşüm: rotate3d(0, 0, 1, 200deg);
+            dönüştürme: rotate3d(0, 0, 1, 200deg);
+    opaklık: 0;
+  }
+}
+
+@keyframes rotateOut {
+  %0 {
+    -webkit-transform-menşei: merkez;
+            transform-menşei: merkez;
+    opaklık: 1;
+  }
+
+  100% {
+    -webkit-transform-menşei: merkez;
+            transform-menşei: merkez;
+    -webkit-dönüşüm: rotate3d(0, 0, 1, 200deg);
+            dönüştürme: rotate3d(0, 0, 1, 200deg);
+    opaklık: 0;
+  }
+}
+
+.döndür {
+  -webkit-animasyon-adı: rotateOut;
+          animasyon-adı: rotateOut;
+}
+
+@-webkit-keyframes rotateOutDownLeft {
+  %0 {
+    -webkit-transform-origin: sol alt;
+            transform-menşei: sol alt;
+    opaklık: 1;
+  }
+
+  100% {
+    -webkit-transform-origin: sol alt;
+            transform-menşei: sol alt;
+    -webkit-dönüşüm: rotate3d(0, 0, 1, 45deg);
+            dönüştürme: rotate3d(0, 0, 1, 45deg);
+    opaklık: 0;
+  }
+}
+
+@keyframes rotateOutDownLeft {
+  %0 {
+    -webkit-transform-origin: sol alt;
+            transform-menşei: sol alt;
+    opaklık: 1;
+  }
+
+  100% {
+    -webkit-transform-origin: sol alt;
+            transform-menşei: sol alt;
+    -webkit-dönüşüm: rotate3d(0, 0, 1, 45deg);
+            dönüştürme: rotate3d(0, 0, 1, 45deg);
+    opaklık: 0;
+  }
+}
+
+.rotateOutDownLeft {
+  -webkit-animasyon-adı: rotateOutDownLeft;
+          animasyon-adı: rotateOutDownLeft;
+}
+
+@-webkit-keyframes rotateOutDownRight {
+  %0 {
+    -webkit-transform-origin: sağ alt;
+            transform-menşei: sağ alt;
+    opaklık: 1;
+  }
+
+  100% {
+    -webkit-transform-origin: sağ alt;
+            transform-menşei: sağ alt;
+    -webkit-dönüşüm: rotate3d(0, 0, 1, -45deg);
+            dönüştürme: rotate3d(0, 0, 1, -45deg);
+    opaklık: 0;
+  }
+}
+
+@keyframes rotateOutDownRight {
+  %0 {
+    -webkit-transform-origin: sağ alt;
+            transform-menşei: sağ alt;
+    opaklık: 1;
+  }
+
+  100% {
+    -webkit-transform-origin: sağ alt;
+            transform-menşei: sağ alt;
+    -webkit-dönüşüm: rotate3d(0, 0, 1, -45deg);
+            dönüştürme: rotate3d(0, 0, 1, -45deg);
+    opaklık: 0;
+  }
+}
+
+.rotateOutDownRight {
+  -webkit-animasyon-adı: rotateOutDownRight;
+          animasyon-adı: rotateOutDownRight;
+}
+
+@-webkit-keyframes rotateOutUpLeft {
+  %0 {
+    -webkit-transform-origin: sol alt;
+            transform-menşei: sol alt;
+    opaklık: 1;
+  }
+
+  100% {
+    -webkit-transform-origin: sol alt;
+            transform-menşei: sol alt;
+    -webkit-dönüşüm: rotate3d(0, 0, 1, -45deg);
+            dönüştürme: rotate3d(0, 0, 1, -45deg);
+    opaklık: 0;
+  }
+}
+
+@keyframes rotateOutUpLeft {
+  %0 {
+    -webkit-transform-origin: sol alt;
+            transform-menşei: sol alt;
+    opaklık: 1;
+  }
+
+  100% {
+    -webkit-transform-origin: sol alt;
+            transform-menşei: sol alt;
+    -webkit-dönüşüm: rotate3d(0, 0, 1, -45deg);
+            dönüştürme: rotate3d(0, 0, 1, -45deg);
+    opaklık: 0;
+  }
+}
+
+.rotateOutUpLeft {
+  -webkit-animasyon-adı: rotateOutUpLeft;
+          animasyon-adı: rotateOutUpLeft;
+}
+
+@-webkit-keyframes rotateOutUpRight {
+  %0 {
+    -webkit-transform-origin: sağ alt;
+            transform-menşei: sağ alt;
+    opaklık: 1;
+  }
+
+  100% {
+    -webkit-transform-origin: sağ alt;
+            transform-menşei: sağ alt;
+    -webkit-dönüşüm: rotate3d(0, 0, 1, 90deg);
+            dönüştürme: rotate3d(0, 0, 1, 90deg);
+    opaklık: 0;
+  }
+}
+
+@keyframes rotateOutUpRight {
+  %0 {
+    -webkit-transform-origin: sağ alt;
+            transform-menşei: sağ alt;
+    opaklık: 1;
+  }
+
+  100% {
+    -webkit-transform-origin: sağ alt;
+            transform-menşei: sağ alt;
+    -webkit-dönüşüm: rotate3d(0, 0, 1, 90deg);
+            dönüştürme: rotate3d(0, 0, 1, 90deg);
+    opaklık: 0;
+  }
+}
+
+.rotateOutUpRight {
+  -webkit-animasyon-adı: rotateOutUpRight;
+          animasyon-adı: rotateOutUpRight;
+}
+
+@-webkit-keyframes menteşe {
+  %0 {
+    -webkit-transform-origin: sol üst;
+            transform-menşei: sol üst;
+    -webkit-animasyon-zamanlama-işlevi: giriş kolaylığı;
+            animasyon zamanlama işlevi: kolay giriş;
+  }
+
+  %20, %60 {
+    -webkit-dönüşüm: rotate3d(0, 0, 1, 80deg);
+            dönüştürme: rotate3d(0, 0, 1, 80deg);
+    -webkit-transform-origin: sol üst;
+            transform-menşei: sol üst;
+    -webkit-animasyon-zamanlama-işlevi: giriş kolaylığı;
+            animasyon zamanlama işlevi: kolay giriş;
+  }
+
+  %40, %80 {
+    -webkit-dönüşüm: rotate3d(0, 0, 1, 60deg);
+            dönüştürme: rotate3d(0, 0, 1, 60deg);
+    -webkit-transform-origin: sol üst;
+            transform-menşei: sol üst;
+    -webkit-animasyon-zamanlama-işlevi: giriş kolaylığı;
+            animasyon zamanlama işlevi: kolay giriş;
+    opaklık: 1;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 700px, 0);
+            dönüştürme: translate3d(0, 700px, 0);
+    opaklık: 0;
+  }
+}
+
+@keyframes menteşe {
+  %0 {
+    -webkit-transform-origin: sol üst;
+            transform-menşei: sol üst;
+    -webkit-animasyon-zamanlama-işlevi: giriş kolaylığı;
+            animasyon zamanlama işlevi: kolay giriş;
+  }
+
+  %20, %60 {
+    -webkit-dönüşüm: rotate3d(0, 0, 1, 80deg);
+            dönüştürme: rotate3d(0, 0, 1, 80deg);
+    -webkit-transform-origin: sol üst;
+            transform-menşei: sol üst;
+    -webkit-animasyon-zamanlama-işlevi: giriş kolaylığı;
+            animasyon zamanlama işlevi: kolay giriş;
+  }
+
+  %40, %80 {
+    -webkit-dönüşüm: rotate3d(0, 0, 1, 60deg);
+            dönüştürme: rotate3d(0, 0, 1, 60deg);
+    -webkit-transform-origin: sol üst;
+            transform-menşei: sol üst;
+    -webkit-animasyon-zamanlama-işlevi: giriş kolaylığı;
+            animasyon zamanlama işlevi: kolay giriş;
+    opaklık: 1;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 700px, 0);
+            dönüştürme: translate3d(0, 700px, 0);
+    opaklık: 0;
+  }
+}
+
+.menteşe {
+  -webkit-animasyon-adı: menteşe;
+          animasyon adı: menteşe;
+}
+
+/* orijinal olarak Nick Pettit tarafından yazılmıştır - https://github.com/nickpettit/glide */
+
+@-webkit-keyframes rollIn {
+  %0 {
+    opaklık: 0;
+    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+            dönüştürme: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+
+  100% {
+    opaklık: 1;
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+  }
+}
+
+@keyframes rollIn {
+  %0 {
+    opaklık: 0;
+    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+            dönüştürme: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+
+  100% {
+    opaklık: 1;
+    -webkit-dönüşüm: yok;
+            dönüştürme: yok;
+  }
+}
+
+.rollIn {
+  -webkit-animasyon-adı: rollIn;
+          animasyon adı: rollIn;
+}
+
+/* orijinal olarak Nick Pettit tarafından yazılmıştır - https://github.com/nickpettit/glide */
+
+@-webkit-keyframes rollOut {
+  %0 {
+    opaklık: 1;
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+            dönüştürme: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+  }
+}
+
+@keyframes rollOut {
+  %0 {
+    opaklık: 1;
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+            dönüştürme: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+  }
+}
+
+.açarak yaymak {
+  -webkit-animasyon-adı: rollOut;
+          animasyon-adı: rollOut;
+}
+
+@-webkit-anahtar kareler zoomIn {
+  %0 {
+    opaklık: 0;
+    -webkit-dönüşüm: ölçek3d(.3, .3, .3);
+            dönüştürme: ölçek3d(.3, .3, .3);
+  }
+
+  %50 {
+    opaklık: 1;
+  }
+}
+
+@keyframes zoomIn {
+  %0 {
+    opaklık: 0;
+    -webkit-dönüşüm: ölçek3d(.3, .3, .3);
+            dönüştürme: ölçek3d(.3, .3, .3);
+  }
+
+  %50 {
+    opaklık: 1;
+  }
+}
+
+.Yakınlaştır {
+  -webkit-animasyon-adı: zoomIn;
+          animasyon adı: zoomIn;
+}
+
+@-webkit-keyframes zoomInDown {
+  %0 {
+    opaklık: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+            dönüştürme: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    -webkit-animasyon-zamanlama-fonksiyonu: cub-bezier(0.550, 0.055, 0.675, 0.190);
+            animasyon-zamanlama-fonksiyonu: cub-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  %60 {
+    opaklık: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+            dönüştürme: ölçek3d(.475, .475, .475) translate3d(0, 60px, 0);
+    -webkit-animasyon-zamanlama-fonksiyonu: cub-bezier(0.175, 0.885, 0.320, 1);
+            animasyon-zamanlama-fonksiyonu: cub-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+
+@keyframes zoomInDown {
+  %0 {
+    opaklık: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+            dönüştürme: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    -webkit-animasyon-zamanlama-fonksiyonu: cub-bezier(0.550, 0.055, 0.675, 0.190);
+            animasyon-zamanlama-fonksiyonu: cub-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  %60 {
+    opaklık: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+            dönüştürme: ölçek3d(.475, .475, .475) translate3d(0, 60px, 0);
+    -webkit-animasyon-zamanlama-fonksiyonu: cub-bezier(0.175, 0.885, 0.320, 1);
+            animasyon-zamanlama-fonksiyonu: cub-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+
+.zoomInDown {
+  -webkit-animasyon-adı: zoomInDown;
+          animasyon adı: zoomInDown;
+}
+
+@-webkit-keyframes zoomInLeft {
+  %0 {
+    opaklık: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+            dönüştürme: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+    -webkit-animasyon-zamanlama-fonksiyonu: cub-bezier(0.550, 0.055, 0.675, 0.190);
+            animasyon-zamanlama-fonksiyonu: cub-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  %60 {
+    opaklık: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+            dönüştürme: ölçek3d(.475, .475, .475) translate3d(10px, 0, 0);
+    -webkit-animasyon-zamanlama-fonksiyonu: cub-bezier(0.175, 0.885, 0.320, 1);
+            animasyon-zamanlama-fonksiyonu: cub-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+
+@keyframes zoomInLeft {
+  %0 {
+    opaklık: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+            dönüştürme: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+    -webkit-animasyon-zamanlama-fonksiyonu: cub-bezier(0.550, 0.055, 0.675, 0.190);
+            animasyon-zamanlama-fonksiyonu: cub-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  %60 {
+    opaklık: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+            dönüştürme: ölçek3d(.475, .475, .475) translate3d(10px, 0, 0);
+    -webkit-animasyon-zamanlama-fonksiyonu: cub-bezier(0.175, 0.885, 0.320, 1);
+            animasyon-zamanlama-fonksiyonu: cub-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+
+.zoomInLeft {
+  -webkit-animasyon-adı: zoomInLeft;
+          animasyon adı: zoomInLeft;
+}
+
+@-webkit-keyframes zoomInRight {
+  %0 {
+    opaklık: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+            dönüştürme: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+    -webkit-animasyon-zamanlama-fonksiyonu: cub-bezier(0.550, 0.055, 0.675, 0.190);
+            animasyon-zamanlama-fonksiyonu: cub-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  %60 {
+    opaklık: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+            dönüştürme: ölçek3d(.475, .475, .475) translate3d(-10px, 0, 0);
+    -webkit-animasyon-zamanlama-fonksiyonu: cub-bezier(0.175, 0.885, 0.320, 1);
+            animasyon-zamanlama-fonksiyonu: cub-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+
+@keyframes zumInRight {
+  %0 {
+    opaklık: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+            dönüştürme: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+    -webkit-animasyon-zamanlama-fonksiyonu: cub-bezier(0.550, 0.055, 0.675, 0.190);
+            animasyon-zamanlama-fonksiyonu: cub-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  %60 {
+    opaklık: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+            dönüştürme: ölçek3d(.475, .475, .475) translate3d(-10px, 0, 0);
+    -webkit-animasyon-zamanlama-fonksiyonu: cub-bezier(0.175, 0.885, 0.320, 1);
+            animasyon-zamanlama-fonksiyonu: cub-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+
+.zoomInRight {
+  -webkit-animasyon-adı: zoomInRight;
+          animasyon adı: zoomInRight;
+}
+
+@-webkit-keyframes zoomInUp {
+  %0 {
+    opaklık: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+            dönüştürme: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+    -webkit-animasyon-zamanlama-fonksiyonu: cub-bezier(0.550, 0.055, 0.675, 0.190);
+            animasyon-zamanlama-fonksiyonu: cub-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  %60 {
+    opaklık: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+            dönüştürme: ölçek3d(.475, .475, .475) translate3d(0, -60px, 0);
+    -webkit-animasyon-zamanlama-fonksiyonu: cub-bezier(0.175, 0.885, 0.320, 1);
+            animasyon-zamanlama-fonksiyonu: cub-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+
+@keyframes zoomInUp {
+  %0 {
+    opaklık: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+            dönüştürme: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+    -webkit-animasyon-zamanlama-fonksiyonu: cub-bezier(0.550, 0.055, 0.675, 0.190);
+            animasyon-zamanlama-fonksiyonu: cub-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  %60 {
+    opaklık: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+            dönüştürme: ölçek3d(.475, .475, .475) translate3d(0, -60px, 0);
+    -webkit-animasyon-zamanlama-fonksiyonu: cub-bezier(0.175, 0.885, 0.320, 1);
+            animasyon-zamanlama-fonksiyonu: cub-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+
+.zoomInUp {
+  -webkit-animasyon-adı: zoomInUp;
+          animasyon adı: zoomInUp;
+}
+
+@-webkit-keyframes zoomOut {
+  %0 {
+    opaklık: 1;
+  }
+
+  %50 {
+    opaklık: 0;
+    -webkit-dönüşüm: ölçek3d(.3, .3, .3);
+            dönüştürme: ölçek3d(.3, .3, .3);
+  }
+
+  100% {
+    opaklık: 0;
+  }
+}
+
+@keyframes zoomOut {
+  %0 {
+    opaklık: 1;
+  }
+
+  %50 {
+    opaklık: 0;
+    -webkit-dönüşüm: ölçek3d(.3, .3, .3);
+            dönüştürme: ölçek3d(.3, .3, .3);
+  }
+
+  100% {
+    opaklık: 0;
+  }
+}
+
+.uzaklaştır {
+  -webkit-animasyon-adı: zoomOut;
+          animasyon adı: zoomOut;
+}
+
+@-webkit-keyframes zoomOutDown {
+  %40 {
+    opaklık: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+            dönüştürme: ölçek3d(.475, .475, .475) translate3d(0, -60px, 0);
+    -webkit-animasyon-zamanlama-fonksiyonu: cub-bezier(0.550, 0.055, 0.675, 0.190);
+            animasyon-zamanlama-fonksiyonu: cub-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 2000px, 0);
+            dönüştürme: scale3d(.1, .1, .1) translate3d(0, 2000px, 0);
+    -webkit-transform-origin: orta alt;
+            transform-origin: orta alt;
+    -webkit-animasyon-zamanlama-fonksiyonu: cub-bezier(0.175, 0.885, 0.320, 1);
+            animasyon-zamanlama-fonksiyonu: cub-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+
+@keyframes zoomOutDown {
+  %40 {
+    opaklık: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+            dönüştürme: ölçek3d(.475, .475, .475) translate3d(0, -60px, 0);
+    -webkit-animasyon-zamanlama-fonksiyonu: cub-bezier(0.550, 0.055, 0.675, 0.190);
+            animasyon-zamanlama-fonksiyonu: cub-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 2000px, 0);
+            dönüştürme: scale3d(.1, .1, .1) translate3d(0, 2000px, 0);
+    -webkit-transform-origin: orta alt;
+            transform-origin: orta alt;
+    -webkit-animasyon-zamanlama-fonksiyonu: cub-bezier(0.175, 0.885, 0.320, 1);
+            animasyon-zamanlama-fonksiyonu: cub-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+
+.zoomOutDown {
+  -webkit-animasyon-adı: zoomOutDown;
+          animasyon adı: zoomOutDown;
+}
+
+@-webkit-keyframes zoomOutLeft {
+  %40 {
+    opaklık: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);
+            dönüştürme: ölçek3d(.475, .475, .475) translate3d(42px, 0, 0);
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-transform: ölçek(.1) translate3d(-2000px, 0, 0);
+            dönüştürme: ölçek(.1) translate3d(-2000px, 0, 0);
+    -webkit-transform-origin: sol merkez;
+            transform-menşei: sol merkez;
+  }
+}
+
+@keyframes zoomOutLeft {
+  %40 {
+    opaklık: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);
+            dönüştürme: ölçek3d(.475, .475, .475) translate3d(42px, 0, 0);
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-transform: ölçek(.1) translate3d(-2000px, 0, 0);
+            dönüştürme: ölçek(.1) translate3d(-2000px, 0, 0);
+    -webkit-transform-origin: sol merkez;
+            transform-menşei: sol merkez;
+  }
+}
+
+.zoomOutLeft {
+  -webkit-animasyon-adı: zoomOutLeft;
+          animasyon adı: zoomOutLeft;
+}
+
+@-webkit-keyframes zoomOutRight {
+  %40 {
+    opaklık: 1;
+    -webkit-dönüşüm: ölçek3d(.475, .475, .475) translate3d(-42px, 0, 0);
+            dönüştürme: ölçek3d(.475, .475, .475) translate3d(-42px, 0, 0);
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-transform: ölçek(.1) translate3d(2000px, 0, 0);
+            dönüştürme: ölçek(.1) translate3d(2000px, 0, 0);
+    -webkit-transform-origin: sağ merkez;
+            transform-origin: sağ merkez;
+  }
+}
+
+@keyframes zoomOutRight {
+  %40 {
+    opaklık: 1;
+    -webkit-dönüşüm: ölçek3d(.475, .475, .475) translate3d(-42px, 0, 0);
+            dönüştürme: ölçek3d(.475, .475, .475) translate3d(-42px, 0, 0);
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-transform: ölçek(.1) translate3d(2000px, 0, 0);
+            dönüştürme: ölçek(.1) translate3d(2000px, 0, 0);
+    -webkit-transform-origin: sağ merkez;
+            transform-origin: sağ merkez;
+  }
+}
+
+.zoomOutRight {
+  -webkit-animasyon-adı: zoomOutRight;
+          animasyon adı: zoomOutRight;
+}
+
+@-webkit-keyframes zoomOutUp {
+  %40 {
+    opaklık: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+            dönüştürme: ölçek3d(.475, .475, .475) translate3d(0, 60px, 0);
+    -webkit-animasyon-zamanlama-fonksiyonu: cub-bezier(0.550, 0.055, 0.675, 0.190);
+            animasyon-zamanlama-fonksiyonu: cub-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -2000px, 0);
+            dönüştürme: scale3d(.1, .1, .1) translate3d(0, -2000px, 0);
+    -webkit-transform-origin: orta alt;
+            transform-origin: orta alt;
+    -webkit-animasyon-zamanlama-fonksiyonu: cub-bezier(0.175, 0.885, 0.320, 1);
+            animasyon-zamanlama-fonksiyonu: cub-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+
+@keyframes zoomOutUp {
+  %40 {
+    opaklık: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+            dönüştürme: ölçek3d(.475, .475, .475) translate3d(0, 60px, 0);
+    -webkit-animasyon-zamanlama-fonksiyonu: cub-bezier(0.550, 0.055, 0.675, 0.190);
+            animasyon-zamanlama-fonksiyonu: cub-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  100% {
+    opaklık: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -2000px, 0);
+            dönüştürme: scale3d(.1, .1, .1) translate3d(0, -2000px, 0);
+    -webkit-transform-origin: orta alt;
+            transform-origin: orta alt;
+    -webkit-animasyon-zamanlama-fonksiyonu: cub-bezier(0.175, 0.885, 0.320, 1);
+            animasyon-zamanlama-fonksiyonu: cub-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+
+.zoomOutUp {
+  -webkit-animasyon-adı: zoomOutUp;
+          animasyon adı: zoomOutUp;
+}
+
+@-webkit-keyframes slideInDown {
+  %0 {
+    -webkit-transform: çeviriY(-100%);
+            dönüştürme: öteleY(-100%);
+    görünürlük: görünür;
+  }
+
+  100% {
+    -webkit-dönüşüm: çeviriY(0);
+            dönüştür: çevirY(0);
+  }
+}
+
+@keyframes slideInDown {
+  %0 {
+    -webkit-transform: çeviriY(-100%);
+            dönüştürme: öteleY(-100%);
+    görünürlük: görünür;
+  }
+
+  100% {
+    -webkit-dönüşüm: çeviriY(0);
+            dönüştür: çevirY(0);
+  }
+}
+
+.slideInDown {
+  -webkit-animasyon-adı: slideInDown;
+          animasyon-adı: slideInDown;
+}
+
+@-webkit-keyframes slideInLeft {
+  %0 {
+    -webkit-dönüşüm: translateX(-100%);
+            dönüştürme: translateX(-100%);
+    görünürlük: görünür;
+  }
+
+  100% {
+    -webkit-dönüşüm: translateX(0);
+            dönüştürme: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  %0 {
+    -webkit-dönüşüm: translateX(-100%);
+            dönüştürme: translateX(-100%);
+    görünürlük: görünür;
+  }
+
+  100% {
+    -webkit-dönüşüm: translateX(0);
+            dönüştürme: translateX(0);
+  }
+}
+
+.slideInLeft {
+  -webkit-animasyon-adı: slideInLeft;
+          animasyon adı: slideInLeft;
+}
+
+@-webkit-keyframes slideInRight {
+  %0 {
+    -webkit-dönüşüm: translateX(100%);
+            dönüştürme: translateX(100%);
+    görünürlük: görünür;
+  }
+
+  100% {
+    -webkit-dönüşüm: translateX(0);
+            dönüştürme: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  %0 {
+    -webkit-dönüşüm: translateX(100%);
+            dönüştürme: translateX(100%);
+    görünürlük: görünür;
+  }
+
+  100% {
+    -webkit-dönüşüm: translateX(0);
+            dönüştürme: translateX(0);
+  }
+}
+
+.slideInRight {
+  -webkit-animasyon-adı: slideInRight;
+          animasyon-adı: slideInRight;
+}
+
+@-webkit-keyframes slideInUp {
+  %0 {
+    -webkit-dönüşüm: çeviriY(%100);
+            dönüştürme: öteleY(%100);
+    görünürlük: görünür;
+  }
+
+  100% {
+    -webkit-dönüşüm: çeviriY(0);
+            dönüştür: çevirY(0);
+  }
+}
+
+@keyframes slideInUp {
+  %0 {
+    -webkit-dönüşüm: çeviriY(%100);
+            dönüştürme: öteleY(%100);
+    görünürlük: görünür;
+  }
+
+  100% {
+    -webkit-dönüşüm: çeviriY(0);
+            dönüştür: çevirY(0);
+  }
+}
+
+.slideInUp {
+  -webkit-animasyon-adı: slideInUp;
+          animasyon adı: slideInUp;
+}
+
+@-webkit-keyframes slideOutDown {
+  %0 {
+    -webkit-dönüşüm: çeviriY(0);
+            dönüştür: çevirY(0);
+  }
+
+  100% {
+    görünürlük: gizli;
+    -webkit-dönüşüm: çeviriY(%100);
+            dönüştürme: öteleY(%100);
+  }
+}
+
+@keyframes slideOutDown {
+  %0 {
+    -webkit-dönüşüm: çeviriY(0);
+            dönüştür: çevirY(0);
+  }
+
+  100% {
+    görünürlük: gizli;
+    -webkit-dönüşüm: çeviriY(%100);
+            dönüştürme: öteleY(%100);
+  }
+}
+
+.slideOutDown {
+  -webkit-animasyon-adı: slideOutDown;
+          animasyon adı: slideOutDown;
+}
+
+@-webkit-keyframes slideOutLeft {
+  %0 {
+    -webkit-dönüşüm: translateX(0);
+            dönüştürme: translateX(0);
+  }
+
+  100% {
+    görünürlük: gizli;
+    -webkit-dönüşüm: translateX(-100%);
+            dönüştürme: translateX(-100%);
+  }
+}
+
+@keyframes slideOutLeft {
+  %0 {
+    -webkit-dönüşüm: translateX(0);
+            dönüştürme: translateX(0);
+  }
+
+  100% {
+    görünürlük: gizli;
+    -webkit-dönüşüm: translateX(-100%);
+            dönüştürme: translateX(-100%);
+  }
+}
+
+.slideOutLeft {
+  -webkit-animasyon-adı: slideOutLeft;
+          animasyon adı: slideOutLeft;
+}
+
+@-webkit-keyframes slideOutRight {
+  %0 {
+    -webkit-dönüşüm: translateX(0);
+            dönüştürme: translateX(0);
+  }
+
+  100% {
+    görünürlük: gizli;
+    -webkit-dönüşüm: translateX(100%);
+            dönüştürme: translateX(100%);
+  }
+}
+
+@keyframes slideOutRight {
+  %0 {
+    -webkit-dönüşüm: translateX(0);
+            dönüştürme: translateX(0);
+  }
+
+  100% {
+    görünürlük: gizli;
+    -webkit-dönüşüm: translateX(100%);
+            dönüştürme: translateX(100%);
+  }
+}
+
+.slideOutRight {
+  -webkit-animasyon-adı: slideOutRight;
+          animasyon adı: slideOutRight;
+}
+
+@-webkit-keyframes slideOutUp {
+  %0 {
+    -webkit-dönüşüm: çeviriY(0);
+            dönüştür: çevirY(0);
+  }
+
+  100% {
+    görünürlük: gizli;
+    -webkit-transform: çeviriY(-100%);
+            dönüştürme: öteleY(-100%);
+  }
+}
+
+@keyframes slideOutUp {
+  %0 {
+    -webkit-dönüşüm: çeviriY(0);
+            dönüştür: çevirY(0);
+  }
+
+  100% {
+    görünürlük: gizli;
+    -webkit-transform: çeviriY(-100%);
+            dönüştürme: öteleY(-100%);
+  }
+}
+
+.slideOutUp {
+  -webkit-animasyon-adı: slideOutUp;
+          animasyon adı: slideOutUp;
+}

@@ -1,0 +1,1520 @@
+/** ***************************************
+	
+	@Yazar Avanzare
+	@Web sitesi www.avanzare.co
+	@Son Güncelleme 08:26 Salı, Kas 04, 2014
+
+	İÇİNDEKİLER
+	--------------------------
+	 01. Tipografi
+	 02. Önyükleyici
+	 03. Çeşitli
+	 04. Ön İçerik
+	 05. Bindirme
+	 06. Bindirme İçeriği
+	 07. Kaplama Kontağı
+	 08. Yer Paylaşımı İletişim İçeriği
+	 09. Basımlar
+	 10. Medya Sorguları
+	
+ ** *****************************************
+
+
+
+/** 1. TİPOGRAFİ
+************************************************ ***************/
+html,
+vücut
+{
+    genişlik: %100;
+    yükseklik: %100;
+    kenar boşluğu: 0;
+}
+
+vücut
+{
+    yazı tipi ağırlığı: 300;
+    yazı tipi stili: normal; üst: 0; sağ: 0;
+    alt: 0; sol: 0;
+
+    taşma: gizli !önemli;
+
+    renk: #000;
+    arka plan: #222;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    yazı tipi ailesi: 'Açık Sans', sans-serif;
+    yazı tipi ağırlığı: normal;
+    satır yüksekliği: otomatik;
+
+    kenar boşluğu: 0;
+    dolgu: 0;
+
+    renk: #000;
+}
+
+h1
+{
+    yazı tipi boyutu: 45 piksel;
+}
+
+h2
+{
+    yazı tipi boyutu: 35 piksel;
+}
+
+h3
+{
+    yazı tipi boyutu: 30px;
+}
+
+h4
+{
+    yazı tipi boyutu: 24 piksel;
+}
+
+h5
+{
+    yazı tipi boyutu: 18 piksel;
+}
+
+h6
+{
+    yazı tipi boyutu: 16 piksel;
+}
+
+P
+{
+    yazı tipi ailesi: 'Açık Sans', sans-serif;
+    yazı tipi boyutu: 14 piksel;
+    satır yüksekliği: 18px;
+}
+
+A,
+a: vurgulu,
+a:odak
+{
+    imleç: işaretçi;
+    -webkit-geçişi: tüm .3'ler 0'ları kolaylaştırır;
+       -moz-geçişi: tüm .3'ler 0'ları kolaylaştırır;
+            geçiş: tüm .3'ler kolaylık 0'lar;
+    metin süslemesi: yok;
+}
+
+::-webkit-kaydırma çubuğu
+{
+    genişlik: 14 piksel;
+}
+::-webkit-kaydırma çubuğu-izleme
+{
+    arka plan rengi: rgba(255,255,255,.0);
+}
+::-webkit-kaydırma çubuğu-başparmak
+{
+    arka plan rengi: rgba(255,255,255,1);
+}
+::-webkit-scrollbar-thumb:hover
+{
+    arka plan rengi: rgba(255,255,255,1);
+}
+
+/* parçacıklar */
+#particles-js {
+pozisyon: sabit;
+genişlik: %100;
+yükseklik: %100;
+taşma: gizli;
+sol: 0;
+üst: 0;
+z-endeksi: 1;
+}
+
+
+/** 2. ÖN YÜKLEYİCİ
+************************************************ ***************/
+#prelaoder
+{
+    pozisyon: sabit;
+    z-endeksi: 100000;
+    üst: 0;
+    sağ: 0;
+    alt: 0;
+    sol: 0;
+
+    arka plan: #000;
+}
+
+.priz
+{
+    pozisyon: mutlak;
+    üst: 0;
+    sağ: 0;
+    alt: 0;
+    sol: 0;
+
+    genişlik: 52 piksel;
+    yükseklik: 52 piksel;
+    kenar boşluğu: otomatik;
+}
+
+.soket resmi
+{
+    -webkit-animasyonu: .6s lineer sonsuz döndürme;
+            animasyon: .6s lineer sonsuz döndürme;
+}
+@keyframes döndürme
+{
+    itibaren
+    {
+        dönüştür: döndür(0 derece);
+    }
+    ile
+    {
+        dönüştür: döndür(360 derece);
+    }
+}
+@-webkit-anahtar kareler döner
+{
+    /* Safari ve Chrome */
+
+    itibaren
+    {
+        -webkit-dönüşüm: döndürme (0 derece);
+    }
+    ile
+    {
+        -webkit-dönüşüm: döndürme (360 derece);
+    }
+}
+
+
+
+
+/** 3. ÇEŞİTLİ
+************************************************ ***************/
+#bg-koyu
+{
+    pozisyon: sabit;
+    z-endeksi: 0;
+    üst: 0;
+    sağ: 0;
+    alt: 0;
+    sol: 0;
+
+    arka plan: rgba(0, 0, 0, .5);
+}
+
+#bg-desen,
+.model
+{
+    pozisyon: mutlak;
+    z-endeksi: 0;
+    üst: 0;
+    sağ: 0;
+    alt: 0;
+    sol: 0;
+
+    arka plan: url('http://ayt-wgt.hostingsiteforfree.com/assets/img/pattern/pattern-bg.png') tekrar düzeltildi !önemli;
+}
+
+#bg-resmi
+{
+    konum: sabit !önemli;
+    z-endeksi: -1;
+
+    genişlik: %100;
+    yükseklik: %100;
+}
+
+#bg-video
+{
+    konum: sabit !önemli;
+    z-endeksi: -1;
+
+    genişlik: %100;
+    yükseklik: %100;
+}
+
+#canvas-container
+{
+    konum: sabit !önemli;
+    z-endeksi: 0;
+
+    genişlik: %100;
+    yükseklik: %100;
+
+    opaklık: 0;
+}
+
+tuval
+{
+    konum: sabit !önemli;
+    z-endeksi: 0;
+
+    genişlik: %100;
+    yükseklik: %100;
+}
+
+.showOn-video-bg
+{
+    görüntü yok;
+}
+
+.ses düğmesi
+{
+    yazı tipi boyutu: 18 piksel;
+
+    pozisyon: mutlak;
+    z-endeksi: 7;
+    üst: 20 piksel;
+    sol: 20 piksel;
+
+    imleç: işaretçi;
+
+    renk: #fff;
+}
+
+.durdurma düğmesi
+{
+    yazı tipi boyutu: 18 piksel;
+
+    pozisyon: mutlak;
+    z-endeksi: 7;
+    üst: 20 piksel;
+    sol: 50 piksel;
+
+    imleç: işaretçi;
+
+    renk: #fff;
+}
+
+
+/** 4. ÖN İÇERİK
+************************************************ ***************/
+#ön Sayfa
+{
+    konum: statik !önemli;
+}
+
+#ana ekran
+{
+    pozisyon: mutlak;
+    z-endeksi: 2;
+
+    taşma: gizli;
+
+    genişlik: %100;
+    yükseklik: %100;
+    minimum yükseklik: %100 !önemli;
+}
+
+#ana ekran .content-block
+{
+    pozisyon: mutlak;
+    üst: %50;
+
+    genişlik: %100;
+
+    -webkit-dönüşüm: çeviriY(-50%);
+       -moz-dönüşüm: çeviriY(-50%);
+            dönüştürme: öteleY(-50%);
+    metin hizalama: merkez;
+    metin dönüşümü: büyük harf;
+}
+
+#ana ekran .content-block img.logo
+{
+    genişlik: 360 piksel;
+    kenar boşluğu: 0px;
+    üst dolgu: 20px;
+
+    opaklık: 0;
+}
+
+#ana ekran .içerik bloğu .slide
+{
+    genişlik: %100;
+    kenar boşluğu: 0 otomatik;
+
+    metin hizalama: merkez;
+
+    opaklık: 0;
+}
+
+#ana ekran .content-block h1
+{
+    yazı tipi boyutu: 30px;
+    yazı tipi ağırlığı: 600;
+    satır yüksekliği: otomatik;
+
+    kenar boşluğu: 0 otomatik;
+    kenar boşluğu: 50 piksel;
+
+    metin hizalama: merkez;
+
+    opaklık: 0;
+    renk: #fff;
+}
+
+#ana ekran .content-block h1 aralığı
+{
+    renk: #c80101;
+}
+
+#ana ekran .content-block p
+{
+    yazı tipi ailesi: 'Raleway', sans-serif;
+    yazı tipi boyutu: 17 piksel;
+    yazı tipi ağırlığı: 400;
+    satır yüksekliği: otomatik;
+
+    alt dolgu: 30px;
+
+    harf aralığı: 2px;
+
+    opaklık: 0;
+    renk: #fff;
+}
+
+.ok sarma
+{
+    opaklık: 0;
+}
+
+.open-overlay i
+{
+    yazı tipi boyutu: 37 piksel;
+    satır yüksekliği: 66px;
+
+    z-endeksi: 2;
+
+    kenar boşluğu: 0 otomatik;
+
+    imleç: devral;
+    -webkit-geçişi: tüm .6'lar 0'ları kolaylaştırır;
+       -moz-geçişi: tüm .6'lar 0'ları kolaylaştırır;
+            geçiş: tüm .6'lar kolaylık 0'lar;
+
+    renk: miras;
+    arka plan: rgba(255,255,255,.0);
+}
+
+div.open-overlay
+{
+    genişlik: 74 piksel;
+    yükseklik: 74 piksel;
+    kenar boşluğu: 0 otomatik;
+
+    imleç: işaretçi;
+    -webkit-geçişi: tüm .6'lar 0'ları kolaylaştırır;
+       -moz-geçişi: tüm .6'lar 0'ları kolaylaştırır;
+            geçiş: tüm .6'lar kolaylık 0'lar;
+    metin hizalama: merkez;
+
+    renk: #fff;
+    kenarlık: düz 4px #fff;
+}
+
+div.open-overlay:hover
+{
+    arka plan: rgba(255,255,255,.03);
+}
+
+
+/** 5. KAPLAMA
+************************************************ ***************/
+.kaplama
+{
+    konum: sabit !önemli;
+    en iyi 100%;
+
+    genişlik: %100;
+    yükseklik: %100;
+    minimum yükseklik: %100;
+
+    -webkit geçişi: tüm .7'ler kolay giriş 0'lar;
+       -moz-geçişi: tüm .7'ler kolay giriş 0'lar;
+            geçiş: tüm .7'ler giriş kolaylığı 0'lar;
+
+    arka plan: rgba(0, 0, 0, .6);
+	z-endeksi: 10;
+}
+
+.overlay-container
+{
+    pozisyon: mutlak;
+
+    görüntü yok;
+    taşma: otomatik;
+
+    genişlik: %100;
+    yükseklik: %100;
+
+    metin hizalama: merkez;
+}
+
+.overlay.showOverlay
+{
+	üst: 0;
+}
+
+.overlay.hideOverlay
+{
+	en iyi 100%;
+}
+
+.kapatma kaplaması
+{
+    yazı tipi boyutu: 43px;
+    satır yüksekliği: 82px;
+
+    pozisyon: mutlak;
+    z-endeksi: 9;
+    üst: 0;
+    sol: %50;
+
+    görüntü yok;
+
+    genişlik: 82 piksel;
+    yükseklik: 82 piksel;
+    sol kenar boşluğu: -41px;
+
+    imleç: işaretçi;
+    metin hizalama: merkez;
+
+    renk: rgb(246, 246, 246);
+    arka plan: rgba(255,255,255,1);
+}
+
+.kapatmalı img
+{
+    ekran: satır içi !önemli;
+
+    genişlik: 40 piksel;
+    alt dolgu: 6 piksel;
+}
+
+/** 6. YERLEŞİMLİ İÇERİK
+************************************************ ***************/
+.yer paylaşımlı içerik
+{
+    pozisyon: mutlak;
+    üst: %50;
+
+    Ekran bloğu;
+
+    genişlik: %100;
+    kenar boşluğu: 0 otomatik;
+
+    -webkit-dönüşüm: çeviriY(-50%);
+       -moz-dönüşüm: çeviriY(-50%);
+        -ms-dönüşüm: çeviriY(-50%);
+         -o-dönüşüm: öteleY(-50%);
+            dönüştürme: öteleY(-50%);
+    metin hizalama: merkez;
+}
+
+.yer paylaşımlı içerik .kapsayıcı
+{
+    metin hizalama: merkez;
+}
+
+.overlay-content .container h1
+{
+    yazı tipi ailesi: 'Raleway', sans-serif;
+    yazı tipi boyutu: 39 piksel;
+    yazı tipi ağırlığı: 400;
+
+    kenar boşluğu: 30 piksel;
+
+    metin dönüşümü: büyük harf;
+
+    renk: #fff;
+}
+
+.overlay-content .container s
+{
+    yazı tipi boyutu: 13 piksel;
+
+    maksimum genişlik: 600 piksel;
+    kenar boşluğu: 0 otomatik;
+    kenar boşluğu: 15 piksel;
+
+    renk: #ccc;
+}
+
+.durum mesajı
+{
+    yazı tipi boyutu: 12px;
+    yazı tipi stili: italik;
+
+    maksimum genişlik: 460px;
+    yükseklik: 22 piksel;
+    kenar boşluğu: 0 otomatik 5 piksel;
+
+    metin hizalama: merkez;
+    metin dönüşümü: büyük harf;
+
+    renk: #ccc;
+}
+
+.abone olma formu
+{
+    ekran: satır içi blok;
+
+    genişlik: 470 piksel;
+    maksimum genişlik: 470px;
+    kenar boşluğu: 28 piksel;
+
+    arka plan: rgba(255, 255, 255, .0);
+}
+
+.abone olma formu:sonra
+{
+    sağ dolgu: 100px;
+    alt dolgu: 50px;
+
+    sağ kenarlık: 2px #fff katı;
+    alt kenarlık: 2px #fff katı;
+}
+
+.subscribe-form girişi
+{
+    yazı tipi ailesi: 'Raleway', sans-serif;
+    yazı tipi boyutu: 13 piksel !önemli;
+    yazı tipi ağırlığı: 300;
+
+    -webkit-geçişi: tüm .3'ler 0'ları kolaylaştırır;
+       -moz-geçişi: tüm .3'ler 0'ları kolaylaştırır;
+            geçiş: tüm .3'ler kolaylık 0'lar;
+    harf aralığı: 1,5 piksel;
+
+    kenarlık: yok;
+    kenarlık: 1 piksel katı #fff;
+    sağ kenarlık: yok;
+    sınır yarıçapı: 0 !önemli;
+    arka plan: rgba(255,255,255,.00);
+    kutu gölgesi: yok;
+}
+.subscribe-form girişi::-webkit-input-yer tutucu
+{
+    renk: #ccc;
+}
+
+.subscribe-form girişi:-moz-yer tutucu
+{
+    /* Firefox 18- */
+    renk: #ccc;
+}
+
+.subscribe-form girişi::-moz-yer tutucu
+{
+    /* Firefox 19+ */
+    renk: #ccc;
+}
+
+.subscribe-form girişi:-ms-giriş-yer tutucu
+{
+    renk: #ccc;
+}
+.subscribe-form girişi:odak,
+.subscribe-form girişi:aktif
+{
+    renk: #ccc;
+    kenarlık rengi: #fff;
+    anahat: yok;
+    arka plan: rgba(255,255,255,.06);
+    kutu gölgesi: yok;
+}
+
+
+.abone olma formu düğmesi
+{
+    yazı tipi ailesi: 'Raleway', sans-serif;
+    yazı tipi boyutu: 13 piksel !önemli;
+    yazı tipi ağırlığı: 300;
+
+    sol kenar boşluğu: 0 !önemli;
+    dolgu: 10 piksel 18 piksel;
+
+    -webkit-geçişi: tüm .3'ler 0'ları kolaylaştırır;
+       -moz-geçişi: tüm .3'ler 0'ları kolaylaştırır;
+            geçiş: tüm .3'ler kolaylık 0'lar;
+    harf aralığı: 2px;
+    metin dönüşümü: büyük harf;
+
+    renk: #000;
+    kenarlık: 0;
+    kenarlık: 1 piksel katı #fff;
+    sınır yarıçapı: 0 !önemli;
+    arka plan: rgba(255,255,255,1);
+    kutu gölgesi: yok;
+}
+
+.abone olma formu düğmesi: üzerine gelin,
+.forma abone ol düğmesi:odak,
+.abone olma formu düğmesi:aktif
+{
+    kenarlık rengi: #fff;
+    özet: yok !önemli;
+    arka plan: rgba(255,255,255,.06);
+}
+
+.subscribe-form .btn-birincil[devre dışı]
+{
+    opaklık: 1 ;
+    renk: #fff;
+    kenarlık: 1 piksel katı #fff ;
+    anahat: yok;
+    arka plan: rgba(255,255,255,.06);
+}
+
+.yer paylaşımlı içerik .sosyal simgeler
+{
+    kenar boşluğu: 10px 0 0 0;
+    dolgu: 0;
+
+    liste stili: yok;
+
+    metin hizalama: merkez;
+}
+
+.overlay-content .social-icons li
+{
+    ekran: satır içi blok;
+
+    sağ kenar boşluğu: 12 piksel;
+    kenar boşluğu: 6 piksel;
+    sol kenar boşluğu: 12 piksel;
+}
+
+.overlay-content .social-icons li a
+{
+    yazı tipi boyutu: 17 piksel;
+    satır yüksekliği: 40px;
+
+    genişlik: 40 piksel;
+    yükseklik: 40 piksel;
+
+    renk: #000;
+    sınır yarıçapı: 0;
+    arka plan: rgba(255, 255, 255, 1);
+}
+
+.overlay-content .social-icons li a:hover
+{
+    renk: #fff;
+    arka plan: rgba(255,255,255,.06);
+}
+
+.tooltip.bottom .tooltip-ok
+{
+    alt sınır rengi: rgba(255,255,255,.06);
+}
+
+.tooltip.bottom .tooltip-inner
+{
+    yazı tipi ailesi: 'Raleway', sans-serif;
+
+    renk: #fff;
+    sınır yarıçapı: 0;
+    arka plan: rgba(255,255,255,.06);
+}
+
+/** 7. YERLEŞTİRME-İLETİŞİM
+************************************************ ***************/
+
+.overlay-contact
+{
+    konum: sabit !önemli;
+	en iyi 100%;
+    z-endeksi: 20;
+
+    genişlik: %100;
+    yükseklik: %100;
+    minimum yükseklik: %100 !önemli;
+
+    -webkit geçişi: tüm .7'ler kolay giriş 0'lar;
+       -moz-geçişi: tüm .7'ler kolay giriş 0'lar;
+            geçiş: tüm .7'ler giriş kolaylığı 0'lar;
+
+}
+
+.overlay-contact.showOverlay
+{
+	üst: 0;
+}
+
+.overlay-contact.hideOverlay
+{
+    en iyi 100%;
+}
+
+.yakın temas
+{
+    yazı tipi boyutu: 43px;
+    satır yüksekliği: 82px;
+
+    pozisyon: mutlak;
+    z-endeksi: 15;
+    üst: 0;
+    sol: %50;
+
+    görüntü yok;
+
+    genişlik: 82 piksel;
+    yükseklik: 82 piksel;
+    sol kenar boşluğu: -41px;
+    alt dolgu: 6 piksel;
+
+    imleç: işaretçi;
+    metin hizalama: merkez;
+
+    arka plan: rgba(255,255,255,1);
+}
+
+.yakın-temas img
+{
+    ekran: satır içi !önemli;
+
+    genişlik: 40 piksel;
+    alt dolgu: 6 piksel;
+}
+
+
+/** 8. YERLEŞTİRME-İLETİŞİM-İÇERİK
+************************************************ ***************/
+.overlay-iletişim-içeriği
+{
+    pozisyon: mutlak;
+    üst: %50;
+
+    Ekran bloğu;
+
+    genişlik: %100;
+    kenar boşluğu: 0 otomatik;
+
+    -webkit-dönüşüm: çeviriY(-50%);
+       -moz-dönüşüm: çeviriY(-50%);
+        -ms-dönüşüm: çeviriY(-50%);
+         -o-dönüşüm: öteleY(-50%);
+            dönüştürme: öteleY(-50%);
+    metin hizalama: merkez;
+}
+
+.overlay-iletişim-içeriği h1
+{
+    yazı tipi ailesi: 'Raleway', sans-serif;
+    yazı tipi boyutu: 39 piksel;
+
+    kenar boşluğu: 30 piksel;
+
+    metin hizalama: merkez;
+    metin dönüşümü: büyük harf;
+
+    renk: #fff;
+}
+
+.overlay-iletişim-içeriği p
+{
+    yazı tipi boyutu: 13 piksel;
+
+    maksimum genişlik: 370px;
+    kenar boşluğu: 0 otomatik;
+    kenar boşluğu: 30 piksel;
+
+    metin hizalama: merkez;
+
+    renk: #d6d6d6;
+}
+
+.overlay-iletişim-içerik formu
+{
+    yazı tipi boyutu: 18 piksel;
+
+    kenar boşluğu: 20 piksel;
+
+    metin hizalama: merkez;
+}
+
+.overlay-iletişim-içerik formu .kontrol grubu
+{
+    maksimum genişlik: 370px;
+    sağ kenar boşluğu: otomatik;
+    sol kenar boşluğu: otomatik;
+}
+
+.overlay-iletişim-içerik form etiketi
+{
+    yazı tipi ailesi: 'Raleway', sans-serif;
+    yazı tipi boyutu: 14 piksel;
+    yazı tipi ağırlığı: normal;
+
+    kayan nokta: sol;
+
+    kenar boşluğu: 12px;
+
+    metin dönüşümü: büyük harf;
+
+    renk: #b1b1b1;
+}
+
+.overlay-contact-content formu span.status
+{
+    yazı tipi boyutu: 13 piksel;
+    yazı tipi stili: italik;
+
+    renk: #b1b1b1;
+}
+
+.overlay-iletişim-içerik formu girişi,
+.overlay-iletişim-içerik formu metin alanı
+{
+    yazı tipi boyutu: 13 piksel;
+
+    taşma: gizli;
+
+    genişlik: %100;
+    yükseklik: 50 piksel;
+    kenar boşluğu: 20 piksel;
+    kenar boşluğu: 20 piksel;
+    sol dolgu: 10px;
+
+    -webkit-geçişi: tüm .2'ler doğrusal;
+       -moz-geçişi: tüm .2'ler doğrusal;
+         -o-geçiş: tüm .2'ler doğrusal;
+            geçiş: tümü .2s doğrusal;
+
+    renk: #d6d6d6;
+    kenarlık: yok;
+    kenarlık: 1 piksel katı #d6d6d6;
+    sınır yarıçapı: 0;
+    anahat: yok;
+    arka plan: rgba(255,255,255,0);
+    kutu gölgesi: yok;
+}
+
+.overlay-iletişim-içerik formu metin alanı
+{
+    yükseklik: 110 piksel;
+    üst dolgu: 10 piksel;
+
+    yeniden boyutlandırma: yok !önemli;
+}
+
+.overlay-iletişim-içerik formu girişi:odak,
+.overlay-contact-content formu girişi:etkin
+{
+    kenarlık: 1 piksel katı #d6d6d6;
+    anahat: yok;
+    arka plan: rgba(255,255,255,.06);
+}
+
+.overlay-iletişim-içerik formu textarea:odak,
+.overlay-iletişim-içerik formu textarea:aktif
+{
+    kenarlık: 1 piksel katı #fff;
+    anahat: yok;
+    arka plan: rgba(255,255,255,.06);
+}
+
+.overlay-iletişim-içerik formu düğmesi
+{
+    yazı tipi ailesi: 'Raleway', sans-serif;
+    yazı tipi boyutu: 13 piksel;
+    yazı tipi ağırlığı: 400;
+    satır yüksekliği: 50px;
+
+    ekran: satır içi blok;
+    kayan nokta: yok;
+
+    genişlik: 150 piksel;
+    yükseklik: 50 piksel;
+    dolgu: 0 10 piksel 0 10 piksel;
+
+    -webkit-geçişi: tüm .3'ler 0'ları kolaylaştırır;
+       -moz-geçişi: tüm .3'ler 0'ları kolaylaştırır;
+            geçiş: tüm .3'ler kolaylık 0'lar;
+    metin hizalama: merkez;
+    harf aralığı: 1px;
+    metin dönüşümü: büyük harf;
+
+    renk: #d6d6d6;
+    kenarlık: 1 piksel katı #d6d6d6;
+    sınır yarıçapı: 0;
+    arka plan: rgba(255,255,255,0);
+}
+
+.overlay-iletişim-içerik formu düğmesi: üzerine gelin,
+.overlay-iletişim-içerik formu düğmesi:odak,
+.overlay-iletişim-içerik formu düğmesi:aktif
+{
+    renk: #d6d6d6;
+    kenarlık: 1 piksel katı #d6d6d6;
+    anahat: yok;
+    arka plan: rgba(255,255,255,.06);
+}
+
+.overlay-contact-content .status-message-contact
+{
+    yazı tipi ailesi: 'Raleway', sans-serif;
+    yazı tipi boyutu: 14 piksel;
+    yazı tipi ağırlığı: normal;
+
+    kayan nokta: merkez;
+
+    kenar boşluğu: 20 piksel;
+    kenar boşluğu: 12px;
+
+    metin dönüşümü: büyük harf;
+
+    renk: #b1b1b1;
+}
+
+/** 9. SÜRÜMLER
+ ************************************************ ***************/
+.beyaz .kaplama
+{
+    arka plan: rgba(255, 255, 255, .6);
+}
+
+.beyaz .overlay-content .container h1
+{
+    renk: #000;
+}
+
+.beyaz .overlay-content .container s
+{
+    renk: #333;
+}
+
+.beyaz .durum mesajı
+{
+    renk: #444;
+}
+
+.white .subscribe-form girişi
+{
+    kenarlık: 1 piksel katı #000;
+    sağ kenarlık: yok;
+}
+
+.white .subscribe-form girişi::-webkit-input-yer tutucu
+{
+    renk: #333;
+}
+
+.white .subscribe-form girişi:-moz-yer tutucu
+{
+    /* Firefox 18- */
+    renk: #333;
+}
+
+.white .subscribe-form girişi::-moz-yer tutucu
+{
+    /* Firefox 19+ */
+    renk: #333;
+}
+
+.white .subscribe-form girişi:-ms-giriş-yer tutucu
+{
+    renk: #333;
+}
+
+.white .subscribe-form girişi:odak,
+.white .subscribe-form girişi:aktif
+{
+    renk: #000;
+    kenarlık rengi: #000;
+    arka plan: rgba(0,0,0,.06);
+}
+
+
+.beyaz .abone olma formu düğmesi
+{
+    renk: #fff;
+    kenarlık: 1 piksel katı #000;
+    arka plan: rgba(0,0,0,1);
+}
+
+.beyaz .abone olma formu düğmesi: üzerine gelin,
+.beyaz .forma abone ol düğmesi:odak,
+.beyaz .forma abone ol düğmesi:aktif
+{
+    kenarlık rengi: #000;
+    arka plan: rgba(0,0,0,.06);
+}
+
+.white .subscribe-form .btn-primary[devre dışı]
+{
+    opaklık: 1;
+    renk: #000;
+    kenarlık: 1 piksel katı #000 ;
+    anahat: yok;
+    arka plan: rgba(0,0,0,.06);
+}
+
+.beyaz .overlay-content .social-icons li a
+{
+    renk: #fff;
+    arka plan: rgba(0, 0, 0, 1);
+}
+
+.beyaz .overlay-content .social-icons li a:hover
+{
+    renk: #fff;
+    arka plan: rgba(0,0,0,.06);
+}
+
+.beyaz .tooltip.bottom .tooltip-ok
+{
+    alt sınır rengi: rgba(0,0,0,.06);
+}
+
+.beyaz .tooltip.bottom .tooltip-inner
+{
+    renk: #fff;
+    arka plan: rgba(0,0,0,.06);
+}
+
+.beyaz .kapat bindirme
+{
+    arka plan: rgba(0,0,0,1);
+}
+
+.beyaz .kapatma resmi
+{
+    içerik: url('http://ayt-wgt.hostingsiteforfree.com/assets/img/cross-white-icon.png');
+}
+
+.beyaz .overlay-iletişim-içeriği h1
+{
+    renk: #000;
+}
+
+.beyaz .overlay-iletişim-içeriği p
+{
+    renk: #333;
+}
+
+.beyaz .overlay-iletişim-içerik form etiketi
+{
+    renk: #333;
+}
+
+.white .overlay-contact-content formu span.status
+{
+    renk: #333;
+}
+
+.beyaz .overlay-iletişim-içerik formu girişi,
+.beyaz .overlay-iletişim-içerik formu metin alanı
+{
+    renk: #333;
+    kenarlık: 1 piksel katı #333;
+}
+
+.white .overlay-contact-content form girişi:odak,
+.white .overlay-contact-content form girişi:etkin
+{
+    kenarlık: 1 piksel katı #333;
+    arka plan: rgba(0,0,0,.06);
+}
+
+.white .overlay-contact-content form textarea:odak,
+.white .overlay-contact-content form textarea:aktif
+{
+    kenarlık: 1 piksel katı #333;
+    arka plan: rgba(0,0,0,.06);
+}
+
+.beyaz .overlay-iletişim-içerik formu düğmesi
+{
+    renk: #333;
+    kenarlık: 1 piksel katı #333;
+}
+
+.beyaz .overlay-iletişim-içerik formu düğmesi: üzerine gelin,
+.beyaz .overlay-iletişim-içerik formu düğmesi:odak,
+.beyaz .overlay-iletişim-içerik formu düğmesi:aktif
+{
+    renk: #333;
+    kenarlık: 1 piksel katı #333;
+    arka plan: rgba(0,0,0,.06);
+}
+
+.beyaz .overlay-contact-content .status-message-contact
+{
+    renk: #333;
+}
+
+.beyaz .yakın temas
+{
+    arka plan: rgba(0,0,0,1);
+}
+
+.beyaz .yakın temas img
+{
+    içerik: url('http://ayt-wgt.hostingsiteforfree.com/assets/img/cross-white-icon.png');
+}
+.uzatılmış .kaplama
+{
+    üst: 0;
+	opaklık: 0;
+	z-endeksi: 0;
+	-webkit-geçişi: tüm 1'ler kolay giriş 0'lar;
+       -moz-geçişi: tüm 1'ler kolay giriş 0'lar;
+            geçiş: tüm 1'ler giriş kolaylığı 0'lar;
+}
+
+.genişletilmiş .overlay.showOverlay
+{
+    z-endeksi: 5;
+    üst: 0;
+    opaklık: 1;
+}
+
+ .extended.overlay.hideOverlay
+{
+    z-endeksi: 0;
+	üst: 0;
+    opaklık: 0;
+}
+
+.genişletilmiş .overlay-contact
+{
+    üst: 0;
+	opaklık: 0;
+	z-endeksi: 0;
+	-webkit-geçişi: tüm 1'ler kolay giriş 0'lar;
+       -moz-geçişi: tüm 1'ler kolay giriş 0'lar;
+            geçiş: tüm 1'ler giriş kolaylığı 0'lar;
+}
+
+.genişletilmiş .overlay-contact.showOverlay
+{
+    z-endeksi: 5;
+    üst: 0;
+    opaklık: 1;
+}
+
+ .genişletilmiş .overlay-contact.hideOverlay
+{
+    z-endeksi: 0;
+	üst: 0;
+    opaklık: 0;
+}
+
+/** 10. MEDYA SORGULARI
+ ************************************************ ***************/
+
+@media yalnızca ekran ve (maksimum yükseklik: 800 piksel)
+{
+    #ana ekran .content-block h1
+    {
+        yazı tipi boyutu: 40px;
+    }
+
+    #ana ekran .content-block p
+    {
+        yazı tipi boyutu: 14 piksel;
+
+        alt dolgu: 40 piksel;
+    }
+
+    .overlay-contact-content .container
+    {
+        kenar boşluğu: 80 piksel;
+    }
+}
+
+@media yalnızca ekran ve (maksimum yükseklik: 630 piksel)
+{
+    .yer paylaşımlı içerik
+    {
+        yükseklik: %100 !önemli;
+    }
+
+    .overlay-iletişim-içeriği
+    {
+        yükseklik: %100 !önemli;
+    }
+
+    #ana ekran .content-block h1
+    {
+        yazı tipi boyutu: 40px;
+
+        kenar boşluğu: 40px;
+    }
+
+    .open-bindirme
+    {
+        yazı tipi boyutu: 32px;
+        satır yüksekliği: 70px;
+
+        genişlik: 70 piksel;
+        yükseklik: 70 piksel;
+        kenar boşluğu: -70px;
+        sol kenar boşluğu: -35px;
+    }
+
+    #ana ekran .content-block img.logo
+    {
+        genişlik: 220 piksel;
+        kenar boşluğu: 8 piksel;
+    }
+
+    .open-bindirme
+    {
+        yazı tipi boyutu: 28 piksel;
+        satır yüksekliği: 60px;
+
+        genişlik: 60 piksel;
+        yükseklik: 60 piksel;
+        kenar boşluğu: -60 piksel;
+        sol kenar boşluğu: -30px;
+    }
+
+    .kapatma kaplaması
+    {
+        yazı tipi boyutu: 22px;
+        satır yüksekliği: 60px;
+
+        genişlik: 60 piksel;
+        yükseklik: 60 piksel;
+        sol kenar boşluğu: -30px;
+    }
+
+    .yakın temas
+    {
+        yazı tipi boyutu: 22px;
+        satır yüksekliği: 60px;
+
+        genişlik: 60 piksel;
+        yükseklik: 60 piksel;
+        sol kenar boşluğu: -30px;
+    }
+
+    .kapatma img,
+    .yakın-temas img
+    {
+        genişlik: 30 piksel;
+    }
+
+    .yer paylaşımlı içerik .kapsayıcı
+    {
+        kenar boşluğu: 0;
+        üst dolgu: 80px;
+
+        metin hizalama: merkez;
+    }
+
+    .overlay-contact-content .container
+    {
+        kenar boşluğu: 80 piksel;
+    }
+}
+
+@media yalnızca ekran ve (maksimum yükseklik: 320 piksel)
+{
+    .içerik bloğu
+    {
+        taşma: otomatik;
+
+        yükseklik: %100 !önemli;
+    }
+}
+
+@media yalnızca ekran ve (maksimum genişlik: 768 piksel), yalnızca ekran ve (maksimum yükseklik: 510 piksel)
+{
+    .open-overlay i
+    {
+        yazı tipi boyutu: 32px;
+        satır yüksekliği: 56px;
+    }
+
+    div.open-overlay
+    {
+        genişlik: 60 piksel;
+        yükseklik: 60 piksel;
+    }
+
+    #ana ekran .content-block p
+    {
+        alt dolgu: 60 piksel;
+    }
+
+    #ana ekran .content-block h1
+    {
+        yazı tipi boyutu: 40px;
+    }
+
+    .abone olma formu
+    {
+        ekran: satır içi blok;
+
+        genişlik: otomatik;
+
+        arka plan: rgba(255, 255, 255, .0);
+    }
+}
+
+@media yalnızca ekran ve (maksimum genişlik: 480 piksel), yalnızca ekran ve (maksimum yükseklik: 410 piksel)
+{
+    #ana ekran .content-block h1
+    {
+        yazı tipi boyutu: 40px;
+    }
+
+    #ana ekran .content-block p
+    {
+        yazı tipi boyutu: 10px;
+        yazı tipi ağırlığı: 300;
+
+        alt dolgu: 20px;
+
+        harf aralığı: 2px;
+    }
+
+    #ana ekran .content-block img.logo
+    {
+        genişlik: 190 piksel;
+        kenar boşluğu: 4 piksel;
+    }
+
+    .overlay-content .container h1
+    {
+        yazı tipi boyutu: 30px;
+    }
+
+    .overlay-content .container s
+    {
+        yazı tipi boyutu: 10px;
+    }
+
+    .overlay-iletişim-içeriği h1
+    {
+        yazı tipi boyutu: 35 piksel;
+    }
+
+    .overlay-iletişim-içeriği p
+    {
+        yazı tipi boyutu: 10px;
+    }
+
+    .open-bindirme
+    {
+        yazı tipi boyutu: 28 piksel;
+        satır yüksekliği: 60px;
+
+        genişlik: 60 piksel;
+        yükseklik: 60 piksel;
+        kenar boşluğu: -60 piksel;
+        sol kenar boşluğu: -30px;
+    }
+
+    .kapatma kaplaması
+    {
+        yazı tipi boyutu: 22px;
+        satır yüksekliği: 60px;
+
+        genişlik: 60 piksel;
+        yükseklik: 60 piksel;
+        sol kenar boşluğu: -30px;
+    }
+
+
+    .yakın temas
+    {
+        yazı tipi boyutu: 22px;
+        satır yüksekliği: 60px;
+
+        genişlik: 60 piksel;
+        yükseklik: 60 piksel;
+        sol kenar boşluğu: -30px;
+    }
+
+    .kapatma img,
+    .yakın-temas img
+    {
+        genişlik: 30 piksel;
+    }
+
+    .abone olma formu düğmesi
+    {
+        yazı tipi boyutu: 12 piksel !önemli;
+    }
+}
+
+@media yalnızca ekran ve (maksimum genişlik: 400 piksel), yalnızca ekran ve (maksimum yükseklik: 310 piksel)
+{
+    #ana ekran .content-block h1
+    {
+        yazı tipi boyutu: 30px;
+
+        kenar boşluğu: 30 piksel;
+    }
+
+    #ana ekran .content-block img.logo
+    {
+        genişlik: 170 piksel;
+        kenar boşluğu: 8 piksel;
+    }
+
+    .overlay-content .container h1
+    {
+        yazı tipi boyutu: 30px;
+    }
+
+    .overlay-iletişim-içeriği h1
+    {
+        yazı tipi boyutu: 30px;
+    }
+
+    .yer paylaşımlı içerik .kapsayıcı
+    {
+        kenar boşluğu: 0;
+        üst dolgu: 80px;
+
+        metin hizalama: merkez;
+    }
+
+    .overlay-contact-content .container
+    {
+        kenar boşluğu: 80 piksel;
+    }
+}
+
+@media yalnızca ekran ve (maksimum genişlik: 355 piksel), yalnızca ekran ve (maksimum yükseklik: 280 piksel)
+{
+    #ana ekran .content-block h1
+    {
+        yazı tipi boyutu: 28 piksel;
+
+        kenar boşluğu: 30 piksel;
+    }
+
+    #ana ekran .content-block img.logo
+    {
+        genişlik: 150 piksel;
+        kenar boşluğu: 4 piksel;
+    }
+
+    .overlay-content .container h1
+    {
+        yazı tipi boyutu: 28 piksel;
+    }
+
+    .overlay-iletişim-içeriği h1
+    {
+        yazı tipi boyutu: 28 piksel;
+    }
